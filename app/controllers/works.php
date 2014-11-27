@@ -13,4 +13,14 @@ class Works extends Controller
 			'list' => $list
 		));
 	}
+
+	public function work($slug = '')
+	{
+		$model = $this->model('WorksModel');
+		$work = $model->getWork($slug);
+
+		$this->view('work/work', array(
+			"work" => $work
+		));
+	}
 }

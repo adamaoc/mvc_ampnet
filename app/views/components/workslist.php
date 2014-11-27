@@ -2,6 +2,7 @@
 
 foreach($data as $post) : ?>
 
+<?= $post['slug'] ?>
 <h3><?= $post['title'] ?></h3>
 
 <small><?= $post['category'] ?> | <?= $post['pubdate'] ?></small>

@@ -27,6 +27,7 @@ class WorksModel
 			endforeach;
 			$buildarr[] = array(
 				"title" => $data->posts[$i]->title,
+				"slug" => $data->posts[$i]->slug,
 				"category" => $data->posts[$i]->category,
 				"pubdate" => $data->posts[$i]->pubdate,
 				"imgthumb" => $data->posts[$i]->images->thumb,
@@ -39,8 +40,26 @@ class WorksModel
 		return $buildarr;
 	}
 
-	public function getSingleWork($id) 
+	public function getWork($slug)
 	{
+		$api = $_SERVER['DOCUMENT_ROOT'].'/data/works/works.json';
+		
+		$data = json_decode(file_get_contents($api));
+
+		$postarr = array();
+
+		foreach ($data->posts as $post) {
+			if($post->slug == $slug) {
+				$postarr = $post;
+			}
+		}
+
+		if(empty($postarr)) {
+			// should redirect to a 404 page... 
+			echo "404";
+		}else{
+			return $postarr;
+		}
 
 	}
 }
