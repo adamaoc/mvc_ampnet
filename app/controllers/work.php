@@ -35,7 +35,7 @@ class Work extends Controller
 		$nextpage = $pagenum + 1;
 		$prevpage = $pagenum -1;
 		$maxpagecount = ceil($numPosts / $countby);
-
+		// Do more maths to make this happen :\
 		if($pagenum == 1) {
 			$minpage = 0;
 			$maxpage = 4;
