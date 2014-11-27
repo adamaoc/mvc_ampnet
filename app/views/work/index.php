@@ -15,6 +15,7 @@
 
 	<div class="container">
 		<?php getComponent("workslist", $data['list']); ?>
+		<?php getComponent("pagination", array($data['prevpage'], $data['nextpage'], 'work', $data['maxpagecount'])); ?>
 	</div>
 
 </section>

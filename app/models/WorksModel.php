@@ -10,10 +10,14 @@ class WorksModel
 
 	public function getNumbPosts()
 	{
-
+		$api = $_SERVER['DOCUMENT_ROOT'].'/data/works/works.json';
+		
+		$data = json_decode(file_get_contents($api));
+		
+		return count($data->posts);	
 	}
 
-	public function getList($num)
+	public function getList($startnum, $endnum)
 	{
 		$api = $_SERVER['DOCUMENT_ROOT'].'/data/works/works.json';
 		
@@ -21,7 +25,7 @@ class WorksModel
 
 		$buildarr = array();
 
-		for($i = 0; $i < $num; ++$i) {
+		for($i = $startnum; $i < $endnum; ++$i) {
 			foreach ($data->posts[$i]->tags as $tag) :
 				$tagarr[] = $tag;
 			endforeach;
