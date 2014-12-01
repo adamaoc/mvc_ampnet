@@ -8,15 +8,15 @@
 <?php getComponent("pageheader", $data['headerdata']); ?>
 <article class="container">
 	<div class="meta">
-		Posted on <?= $post->pubdate ?> | 
-		Category <?= $post->category ?>
+		Posted on <?= $post['pubdate'] ?> | 
+		Category <?= $post['category'] ?>
 	</div>
 	<div class="post">
-		<?= $post->post ?>
+		<?= $post['content'] ?>
 	</div>
 
 	<div class="tags-wrap">
-		<?php foreach ($post->tags as $tag) : ?>
+		<?php foreach ($post['tagsarr'] as $tag) : ?>
 			<a href="#"><?= $tag ?></a>
 		<?php endforeach; ?>
 	</div>

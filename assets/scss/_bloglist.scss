@@ -1,0 +1,30 @@
+.bloglist {
+	.post {
+		@include clearfix();
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+		border-bottom: 1px solid $primary-color;
+		&:last-child {
+			border-bottom: none;
+		}
+		.img-wrap {
+			@include bp(sm) {
+				float: left;
+				width: 30%;
+			}
+		}
+		.metadata {
+			display: block;
+		}
+		.title {
+			h3 {
+				font-size: 1.9em;
+			}
+			@include bp(sm) {
+				float: left;
+				width: 70%;
+				padding-left: 1em;
+			}
+		}
+	}
+}

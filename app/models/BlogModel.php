@@ -12,66 +12,134 @@ class BlogModel
 
 	public function getNumbPosts()
 	{
-		$api = $_SERVER['DOCUMENT_ROOT'].'/data/blogs/blogs.json';
-		
-		$data = json_decode(file_get_contents($api));
-		
-		return count($data->posts);	
+		$directory = $this->blogdir;
+		$filecount = 0;
+		$files = glob($directory . "*.md");
+		if ($files){
+		 $filecount = count($files);
+		}
+
+		return $filecount;
 	}
 
 	public function getList($startnum, $endnum)
 	{
-		if($handle = opendir($this->blogdir)) 
-		{
-			
+
+		$list = $this->getAllPosts();
+
+		for($i = $startnum; $i < $endnum; ++$i) {
+			$buildarr[] = $list[$i];
 		}
-		// $api = $_SERVER['DOCUMENT_ROOT'].'/data/blogs/blogs.json';
-		
-		// $data = json_decode(file_get_contents($api));
 
-		// $buildarr = array();
 
-		// for($i = $startnum; $i < $endnum; ++$i) {
-		// 	foreach ($data->posts[$i]->tags as $tag) :
-		// 		$tagarr[] = $tag;
-		// 	endforeach;
-		// 	$buildarr[] = array(
-		// 		"title" => $data->posts[$i]->title,
-		// 		"slug" => $data->posts[$i]->slug,
-		// 		"category" => $data->posts[$i]->category,
-		// 		"pubdate" => $data->posts[$i]->pubdate,
-		// 		"imgthumb" => $data->posts[$i]->images->thumb,
-		// 		"excerpt" => $data->posts[$i]->excerpt,
-		// 		"tags" => $tagarr
-		// 	);
-		// }
+		// echo "<pre>";
+		// print_r($buildarr);
+		// echo "</pre>";
+		array_multisort($buildarr, SORT_DESC);
+		// echo "<pre>";
+		// print_r($buildarr);
+		// echo "</pre>";
+		$this->workslistarr = $buildarr;
+		return $buildarr;
+	}
 
-		// $this->workslistarr = $buildarr;
-		// return $buildarr;
+	private function getAllPosts()
+	{
+		$buildarr = array();
+
+		if($dh = opendir($this->blogdir)) 
+		{
+			while(false !== ($entry = readdir($dh))) 
+			{
+				if(substr(strrchr($entry,'.'),1)==ltrim('md', '.')) 
+				{
+					// Define the blog file.
+                	$post = file($this->blogdir.$entry);
+                	$buildarr[] = $this->buildPost($post);
+				}
+			}
+		}
+
+		$this->workslistarr = $buildarr;
+		return $buildarr;
 	}
 
 	public function getPost($slug)
 	{
+	    $fname = $_SERVER['DOCUMENT_ROOT'].'/data/blogs/posts/'.$slug.'.md';
+	    $post = file($fname);
+	    $postarr = $this->buildPost($post);
 
+		if(empty($postarr)) {
+			// TODO
+			// should redirect to a 404 page... 
+			echo "404";
+		}else{
+			return $postarr;
+		}
 
-		// $api = $_SERVER['DOCUMENT_ROOT'].'/data/blogs/blogs.json';
-		
-		// $data = json_decode(file_get_contents($api));
+	}
 
-		// $postarr = array();
+	private function buildPost($post) 
+	{
 
-		// foreach ($data->posts as $post) {
-		// 	if($post->slug == $slug) {
-		// 		$postarr = $post;
-		// 	}
-		// }
+		require_once $_SERVER['DOCUMENT_ROOT']."/app/core/Parsedown.php";
 
-		// if(empty($postarr)) {
-		// 	// should redirect to a 404 page... 
-		// 	echo "404";
-		// }else{
-		// 	return $postarr;
-		// }
+		$buildarr = array();
 
+    	$blog_title = str_replace(array("\n", '*'), '', $post[0]);
+    	$blog_slug = str_replace(" ", "-", strtolower(trim($blog_title)));
+    	$remove = array("'", '"', ",");
+    	$blog_slug = str_replace($remove, '', $blog_slug);
+    	$blog_subtitle = str_replace(array("\n", '* '), '', $post[1]);
+    	$blog_pubdate = str_replace(array("\n", '* '), '', $post[2]);
+    	$blog_cat = str_replace(array("\n", '* '), '', $post[3]);
+    	
+    	$blog_img = str_replace(array("\n", '* '), '', $post[4]);
+
+    	if($blog_img == "default") {
+    		$blog_imgthumb = "http://ampnetmedia.com/assets/img/default-pattern.jpg";
+    	}else{
+        	$blog_imgarr = explode('|', $blog_img);
+        	$blog_imgthumb = $blog_imgarr[0];
+        	$blog_imgmd = $blog_imgarr[1];
+        	$blog_imglg = $blog_imgarr[2];
+    	}
+
+    	// $post[5] - blog color
+    	$blog_color = str_replace(array("\n", '*'), '', trim($post[5]));
+
+    	// $post[6] - blog status
+    	$blog_status = str_replace(array("\n", '*'), '', $post[6]);
+
+    	// $post[7] - tag array
+    	$blog_tags = str_replace(array("\n", '*'), '', $post[7]);
+    	$tags_arr = explode(',', $blog_tags);
+
+    	// $post[8] - blank space where blog starts
+
+    	// Get the excerpt - intro paragraph
+    	$blog_intro = Parsedown::instance()->parse($post[9]);
+
+    	// Get the whole post
+    	$blog_content = Parsedown::instance()->parse(join('', array_slice($post, 9)));
+
+    	$buildarr = array(
+    		"pubdate" 	=> $blog_pubdate,
+    		"title" 	=> $blog_title,
+    		"subtitle" 	=> $blog_subtitle,
+    		"slug" 		=> $blog_slug,
+    		"category"	=> $blog_cat,
+    		"imgthumb" 	=> $blog_imgthumb,
+    		"imgmd" 	=> $blog_imgmd,
+    		"imglg" 	=> $blog_imglg,
+    		"color"		=> $blog_color,
+    		"tagsarr"	=> $tags_arr,
+    		"status"	=> $blog_status,
+    		"excerpt" 	=> $blog_intro,
+    		"content" 	=> $blog_content
+    	);
+
+    	return $buildarr;
 	}
 }

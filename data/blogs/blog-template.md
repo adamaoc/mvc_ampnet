@@ -1,25 +1,19 @@
-* Title number 2
-* new sub title
-* 2014-12-01
-* webdev
-* http://lorempixel.com/500/500/
-* green
-* published
+* The Post Title HERE
+* Add the post subtitle here
+* date (2014-12-01)
+* category (webdev)
+* image array (http://lorempixel.com/150/150/ | http://lorempixel.com/500/500/ | http://lorempixel.com/1000/500/)
+* blog header color (green or #333)
+* status (published)
+* tag array (tag1, tag2, tag3, tag4)
 
-Lorem markdownum **aures trepidantibus** amor Caicum ibis Pallas; et tellus
-loqueretur cruore, saxo. Vestigia fratres tectam valuere nulla crimina copia,
-paternos moderato liquido vidit. Fons ultima.
+Lorem markdownum **aures trepidantibus** amor Caicum ibis Pallas; et tellus loqueretur cruore, saxo. Vestigia fratres tectam valuere nulla crimina copia, paternos moderato liquido vidit. Fons ultima.
 
-Id illic ut quodque harenae; hinc taedae, alba **tardae** teneram segetes
-manuque fuisses indignante sustulit. Forma institerat virga Mithridateisque
-futuri modo Proserpina Procri conceperat deterruit debent.
+Id illic ut quodque harenae; hinc taedae, alba **tardae** teneram segetes manuque fuisses indignante sustulit. Forma institerat virga Mithridateisque futuri modo Proserpina Procri conceperat deterruit debent.
 
 ## Aeolides augurium securi
 
-[Licet Ascaniumque](http://hipstermerkel.tumblr.com/) nondum fixum decor loca
-pollice! Nam *ereptas*! Pars sede imago debes rectorque trepidare Aurora
-Theseus: bis *passibus*. Feritatis molibar cultoribus te luce frenato nubibus
-**tororum**: pontum.
+[Licet Ascaniumque](http://hipstermerkel.tumblr.com/) nondum fixum decor loca pollice! Nam *ereptas*! Pars sede imago debes rectorque trepidare Aurora Theseus: bis *passibus*. Feritatis molibar cultoribus te luce frenato nubibus **tororum**: pontum.
 
     var bmpMapStorage = smartCopy.sprite.lock(media_ddr_formula,
             page_type_newline, file + public_download / scan);

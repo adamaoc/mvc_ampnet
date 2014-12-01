@@ -1,0 +1,32 @@
+.site-footer {
+	text-align: center;
+	padding: 0.5rem 0;
+	background-color: #ccc;
+	p {
+		margin: 0;
+		line-height: 1.1;
+	}
+	small {
+		font-size: 0.6rem;
+	}
+}
+.footer-nav {
+	ul {
+		width: 100%;
+		text-align: center;
+		margin: 0.5em 0;
+		li {
+			display: inline-block;
+			padding: 0 0.5em;
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+	}
+	.local-links {
+		font-size: 0.7em;
+	}
+}

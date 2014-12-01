@@ -5,13 +5,19 @@ class Home extends Controller
 
 	public function index()
 	{
-		$model = $this->model('WorksModel');
-		$numposts = $model->getNumbPosts();
-		$startnum = $numposts - 3;
-		$list = $model->getList($startnum,$numposts);
+		$works = $this->model('WorksModel');
+		$blogs = $this->model('BlogModel');
+		$worksnumposts = $works->getNumbPosts();
+		$blognumposts = $blogs->getNumbPosts();
+
+		$workstartnum = $worksnumposts - 3;
+		$blogstartnum = $blognumposts - 3;
+		$worklist = $works->getList($workstartnum,$worksnumposts);
+		$bloglist = $blogs->getList($blogstartnum,$blognumposts);
 
 		$this->view('home/index', array(
-			"list" => $list
+			"worklist" => $worklist,
+			"bloglist" => $bloglist
 		));
 	}
 }

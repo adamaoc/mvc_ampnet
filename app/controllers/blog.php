@@ -23,7 +23,13 @@ class Blog extends Controller
 	{
 		$post = $model->getPost($slug);
 		
-		$headerdata = array("title" => $post->title, "class" => "homeheader", "subtitle" => $post->subtitle, "heroimg" => "background: url(".$post->images->large.") no-repeat; background-size: cover;", "postcolor" => "background-color: ".$post->bannercolor."; opacity: 0.6;");
+		$headerdata = array(
+			"title" => $post['title'], 
+			"class" => "page-header", 
+			"subtitle" => $post['subtitle'], 
+			"heroimg" => "background-image: url(".$post['imglg'].");", 
+			"postcolor" => "background-color: ".$post['color'].";"
+		);
 
 		$this->view('blog/single', array(
 			'headerdata' => $headerdata,
@@ -61,7 +67,12 @@ class Blog extends Controller
 
 		$list = $model->getList($minpage,$maxpage);
 
-		$headerdata = array("title" => "Blog", "subtitle" => "<small>ampnet<span>(media)</span></small>", "class" => "homeheader");
+		$headerdata = array(
+			"title" => "Bloging", 
+			"subtitle" => "<small>with ampnet<span>(media)</span></small>", 
+			"class" => "page-header",
+			"heroimg" => "background-image: url(/assets/img/home-banner.jpg);"
+		);
 
 		$this->view('blog/index', array(
 			'headerdata' => $headerdata,
@@ -72,5 +83,16 @@ class Blog extends Controller
 			'prevpage' => $prevpage,
 			'maxpagecount' => $maxpagecount
 		));
+	}
+
+	public function fulllist()
+	{
+		$model = $this->model('BlogModel');
+		$numPosts = $model->getNumbPosts();
+		$list = $model->getList(0,$numPosts);
+
+		$this->view('blog/fulllist', array(
+			"post" => $list
+		));	
 	}
 }

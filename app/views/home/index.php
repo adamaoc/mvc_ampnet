@@ -24,7 +24,7 @@
 </section>	
 
 <?php getComponent("besection"); ?>
-<?php getComponent("recentwork", $data['list']); ?>
-<?php getComponent("recentblog"); ?>
+<?php getComponent("recentwork", $data['worklist']); ?>
+<?php getComponent("bloglist", $data['bloglist']); ?>
 
 <?php getFooter(); ?>

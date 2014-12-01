@@ -1,8 +1,11 @@
 * The long drive home
 * my time with the 2015 Hyundai Sonata
 * 2014-7-31
-* http://txgarage.com/images/2014/07/2015-Hyundai-Sonata-003-400x300.jpg
-* Published
+* automotive
+* http://txgarage.com/images/2014/07/2015-Hyundai-Sonata-003-400x300.jpg | http://txgarage.com/images/2014/07/2015-Hyundai-Sonata-003-400x300.jpg | http://txgarage.com/images/2014/07/2015-Hyundai-Sonata-003.jpg
+* rgba(70,94,126,0.6)
+* published
+* tag1, tag2, tag3, tag4
 
 A few weeks back I was invited to come checkout and drive the new 2015 Sonata by the good people at Hyundai. I have a good relationship with a lot of the automotive manufacturers because I write for txGarage.com, an automotive news and reviews website dedicated to Texas, and I’m a member of the Texas Auto Writers Association. I always enjoy these trips no matter what vehicle we’re going to drive but this one I was particularly excited about. I own a 2013 Hyundai Sonata and have owned a Genesis Coupe as well. I’m a big fan of what Hyundai is doing and they’ve steadily been winning award after award because of the great products they’ve been putting out. So I thought I’d share a little bit of the excursion I took during this trip; they’re not all as eventful as this one turned out for sure. If you want to learn more about the vehicle itself, well I reviewed those parts on [txGarage.com](http://txgarage.com/2014/08/quick-drive-review-with-the-2015-hyundai-sonata/). 
 
