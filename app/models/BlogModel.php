@@ -6,6 +6,8 @@ class BlogModel
 	public $pageSlogan = "DFW Web Development and Design";
 	public $pageContent = "Here is some standard text for the portfolio page.";
 
+	public $blogdir = "./data/blogs/posts/";
+
 	public $workslistarr = array();
 
 	public function getNumbPosts()
@@ -19,51 +21,57 @@ class BlogModel
 
 	public function getList($startnum, $endnum)
 	{
-		$api = $_SERVER['DOCUMENT_ROOT'].'/data/blogs/blogs.json';
-		
-		$data = json_decode(file_get_contents($api));
-
-		$buildarr = array();
-
-		for($i = $startnum; $i < $endnum; ++$i) {
-			foreach ($data->posts[$i]->tags as $tag) :
-				$tagarr[] = $tag;
-			endforeach;
-			$buildarr[] = array(
-				"title" => $data->posts[$i]->title,
-				"slug" => $data->posts[$i]->slug,
-				"category" => $data->posts[$i]->category,
-				"pubdate" => $data->posts[$i]->pubdate,
-				"imgthumb" => $data->posts[$i]->images->thumb,
-				"excerpt" => $data->posts[$i]->excerpt,
-				"tags" => $tagarr
-			);
+		if($handle = opendir($this->blogdir)) 
+		{
+			
 		}
+		// $api = $_SERVER['DOCUMENT_ROOT'].'/data/blogs/blogs.json';
+		
+		// $data = json_decode(file_get_contents($api));
 
-		$this->workslistarr = $buildarr;
-		return $buildarr;
+		// $buildarr = array();
+
+		// for($i = $startnum; $i < $endnum; ++$i) {
+		// 	foreach ($data->posts[$i]->tags as $tag) :
+		// 		$tagarr[] = $tag;
+		// 	endforeach;
+		// 	$buildarr[] = array(
+		// 		"title" => $data->posts[$i]->title,
+		// 		"slug" => $data->posts[$i]->slug,
+		// 		"category" => $data->posts[$i]->category,
+		// 		"pubdate" => $data->posts[$i]->pubdate,
+		// 		"imgthumb" => $data->posts[$i]->images->thumb,
+		// 		"excerpt" => $data->posts[$i]->excerpt,
+		// 		"tags" => $tagarr
+		// 	);
+		// }
+
+		// $this->workslistarr = $buildarr;
+		// return $buildarr;
 	}
 
 	public function getPost($slug)
 	{
-		$api = $_SERVER['DOCUMENT_ROOT'].'/data/blogs/blogs.json';
+
+
+		// $api = $_SERVER['DOCUMENT_ROOT'].'/data/blogs/blogs.json';
 		
-		$data = json_decode(file_get_contents($api));
+		// $data = json_decode(file_get_contents($api));
 
-		$postarr = array();
+		// $postarr = array();
 
-		foreach ($data->posts as $post) {
-			if($post->slug == $slug) {
-				$postarr = $post;
-			}
-		}
+		// foreach ($data->posts as $post) {
+		// 	if($post->slug == $slug) {
+		// 		$postarr = $post;
+		// 	}
+		// }
 
-		if(empty($postarr)) {
-			// should redirect to a 404 page... 
-			echo "404";
-		}else{
-			return $postarr;
-		}
+		// if(empty($postarr)) {
+		// 	// should redirect to a 404 page... 
+		// 	echo "404";
+		// }else{
+		// 	return $postarr;
+		// }
 
 	}
 }
