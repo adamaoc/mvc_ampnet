@@ -14,12 +14,12 @@ $nextlink = "/".$data[2]."/page/".$data[1]."/";
 if($prev < 1) {
 
 }else{ ?>
-	<a class="prevlink" href="<?= $prevlink?>">back to page <?= $prev ?></a>
+	<a class="prevlink btn" href="<?= $prevlink?>">&laquo; back to page <?= $prev ?></a>
 <?php } 
 if($next > $maxpage) {
 
 }else{
 ?>
-	<a class="nextlink" href="<?= $nextlink?>">next page <?= $next ?></a>
+	<a class="nextlink btn" href="<?= $nextlink?>">next to page <?= $next ?> &raquo;</a>
 <?php } ?>
 </div>

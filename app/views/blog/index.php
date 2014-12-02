@@ -2,13 +2,7 @@
 
 <?php getComponent("pageheader", $data['headerdata']); ?>
 
-<section class="recent-work">
-
-	<div class="container">
-		<h3 class="page-title">
-			<span><?= $data['title']; ?></span> - <?= $data['slogan'] ?>
-		</h3>
-	</div>
+<section class="blog-list-page">
 
 	<div class="container">
 		<?php getComponent("bloglist", $data['list']); ?>

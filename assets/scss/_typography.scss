@@ -10,42 +10,42 @@ h4, h5, h6 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     line-height: 1.2em;
     letter-spacing: -2px;
     text-indent: -3px;
     @include bp(sm) {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.2em;
     letter-spacing: -1px;
     text-indent: -2px;
-    @include bp(sm) {
-        font-size: 3.2rem;
-    }
-}
-
-h3 {
-    font-size: 2.8rem;
     @include bp(sm) {
         font-size: 2.8rem;
     }
 }
 
-h4 {
+h3 {
     font-size: 2rem;
+    @include bp(sm) {
+        font-size: 2.1rem;
+    }
 }
 
-h5 {
+h4 {
     font-size: 1.8rem;
 }
 
-h6 {
+h5 {
     font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1rem;
 }
 
 a {

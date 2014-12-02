@@ -1,0 +1,27 @@
+.homeheader {
+	background-image: url("/assets/img/home-banner.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-color: #444;
+	background-repeat: no-repeat;
+	color: #fff;
+	h1 {
+		text-align: right;
+		padding: 3rem 1rem;
+		background-color: rgba($primary-color, 0.3);
+		transition: 0.3s ease-in-out all;
+		@include bp(sm) {
+			padding-right: 3rem;
+		}
+		span {
+			display: block;
+			color: #fff;
+		}
+		small {
+			font-size: 1.5rem;
+			display: block;
+			line-height: 1.2;
+			letter-spacing: 0.07em;
+		}
+	}
+}

@@ -21,10 +21,21 @@ class Work extends Controller
 
 	private function getSingle($model, $slug)
 	{
-		$work = $model->getWork($slug);
+		$post = $model->getPost($slug);
+		
+		$headerdata = array(
+			"title" => $post['title'], 
+			"class" => "page-header", 
+			"subtitle" => $post['subtitle'], 
+			"heroimg" => "background-image: url(/assets/img/".$post['imglg'].");", 
+			"postcolor" => "background-color: ".$post['color'].";"
+		);
 
-		$this->view('work/work', array(
-			"work" => $work
+		$this->view('work/single', array(
+			'headerdata' => $headerdata,
+			'title' => $model->pageTitle,
+			'slogan' => $model->pageSlogan,
+			"post" => $post
 		));	
 	}
 
@@ -56,7 +67,15 @@ class Work extends Controller
 
 		$list = $model->getList($minpage,$maxpage);
 
+		$headerdata = array(
+			"title" => "Portfolio", 
+			"subtitle" => "<small>by ampnet<span>(media)</span></small>", 
+			"class" => "page-header",
+			"heroimg" => "background-image: url(/assets/img/home-banner.jpg);"
+		);
+
 		$this->view('work/index', array(
+			'headerdata' => $headerdata,
 			'title' => $model->pageTitle,
 			'slogan' => $model->pageSlogan,
 			'list' => $list,
@@ -64,5 +83,16 @@ class Work extends Controller
 			'prevpage' => $prevpage,
 			'maxpagecount' => $maxpagecount
 		));
+	}
+
+	public function fulllist()
+	{
+		$model = $this->model('WorksModel');
+		$numPosts = $model->getNumbPosts();
+		$list = $model->getList(0,$numPosts);
+
+		$this->view('work/fulllist', array(
+			"post" => $list
+		));	
 	}
 }

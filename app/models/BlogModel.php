@@ -119,7 +119,14 @@ class BlogModel
     	// $post[8] - blank space where blog starts
 
     	// Get the excerpt - intro paragraph
-    	$blog_intro = Parsedown::instance()->parse($post[9]);
+    	$excerpt = $post[9];
+  		$max_words = 50;
+    	$phrase_array = explode(' ',$excerpt);
+   		if(count($phrase_array) > $max_words && $max_words > 0) {
+      		$excerpt = implode(' ',array_slice($phrase_array, 0, $max_words)).'...';
+   		}
+
+    	$blog_intro = Parsedown::instance()->parse($excerpt);
 
     	// Get the whole post
     	$blog_content = Parsedown::instance()->parse(join('', array_slice($post, 9)));

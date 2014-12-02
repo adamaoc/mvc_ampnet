@@ -20,6 +20,8 @@
 			<a href="#"><?= $tag ?></a>
 		<?php endforeach; ?>
 	</div>
-	<a href="/blog/">back to blog list</a>
+	<p>
+		<a href="/blog/" class="btn">&laquo; back to blog list</a>
+	</p>
 </article>
 <?php getFooter(); ?>

@@ -155,3 +155,16 @@ textarea {
         max-width: 100%;
     }
 }
+
+.btn {
+    padding: 1em 2em;
+    background: $primary-color;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s ease;
+    &:hover {
+        color: #fff;
+        background: darken($primary-color, 10%);
+    }
+}
