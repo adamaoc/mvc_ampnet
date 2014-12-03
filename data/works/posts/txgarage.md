@@ -1,6 +1,6 @@
 * txGarage 
 * News. Reviews. Passion. for Texas automotive consumers.
-* 7
+* 2012-8-1
 * txgarage.com
 * txGarage-ChromeBook.png | txGarage-ChromeBook.png | txGarage-ChromeBook.png
 * 0, 100, 200, 0.3

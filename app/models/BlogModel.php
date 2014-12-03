@@ -27,18 +27,12 @@ class BlogModel
 
 		$list = $this->getAllPosts();
 
+		array_multisort($list, SORT_DESC);
+
 		for($i = $startnum; $i < $endnum; ++$i) {
 			$buildarr[] = $list[$i];
 		}
 
-
-		// echo "<pre>";
-		// print_r($buildarr);
-		// echo "</pre>";
-		array_multisort($buildarr, SORT_DESC);
-		// echo "<pre>";
-		// print_r($buildarr);
-		// echo "</pre>";
 		$this->workslistarr = $buildarr;
 		return $buildarr;
 	}

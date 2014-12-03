@@ -27,12 +27,12 @@ class WorksModel
 
 		$list = $this->getAllPosts();
 
+		array_multisort($list, SORT_DESC);
+
 		for($i = $startnum; $i < $endnum; ++$i) {
 			$buildarr[] = $list[$i];
 		}
 
-		array_multisort($buildarr, SORT_DESC);
-		
 		$this->workslistarr = $buildarr;
 		return $buildarr;
 	}

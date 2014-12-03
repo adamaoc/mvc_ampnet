@@ -1,6 +1,6 @@
 * Holiday Design Store
 * An online store that sells seasonal and holiday decorations.
-* 3
+* 2013-4-1
 * holiday-design.com
 * HD-chromebook.png | HD-chromebook.png | HD-chromebook.png
 * 107, 98, 20, 0.5

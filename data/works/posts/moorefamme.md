@@ -1,6 +1,6 @@
 * moorefam.me
 * The Moore Family Blog
-* 6
+* 2014-5-1
 * moorefam.me
 * moorefam-ChromeBook.png | moorefam-ChromeBook.png | moorefam-ChromeBook.png
 * default
