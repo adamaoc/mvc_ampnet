@@ -1,11 +1,10 @@
 @import "compass/css3";
 @import "compass/utilities/general/clearfix";
+
 /* ==================================
    ========= Define Variables =======
    ================================== */
 // #557278 // green //
-//$primary-color: #2C92BD; // light blue
-//$primary-color: #544540; // brown
 
 $primary-color: #557278; // green
 $secondary-color: #7F342C; // red
@@ -23,7 +22,6 @@ $md: 60rem;
 $lg: 80rem;
 
 $grid-padding: 1em;
-
 
 @import "grid";
 

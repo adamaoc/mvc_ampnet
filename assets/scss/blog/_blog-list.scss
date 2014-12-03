@@ -3,6 +3,7 @@
 		list-style: none;
 		overflow: hidden;
 		padding: 1em 0;
+		border-bottom: 5px solid lighten($primary-color, 30%);
 	}
 	.meta {
 		display: block;
@@ -10,9 +11,12 @@
 	}
 	.details {
 		display: block;
-		overflow: hidden
+		overflow: hidden;
+		text-decoration: none;
 	}
 	.imgwrap {
+		max-height: 10em;
+		overflow: hidden;
 		@include bp(sm) {
 			width: 30%;
 			float: left;	

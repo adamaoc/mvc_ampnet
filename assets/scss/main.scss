@@ -1,15 +1,23 @@
-@import "base",
-		"typography",
-		"form_styles",
-		"nav",
-		"homepage",
-		"about-flash",
-		"recent-work",
-		"footer",
-		"about",
-		"contact",
-		"bloglist",
-		"blogpost",
-		"single_work",
-		"pagination",
-		"page_header";
+// Import base and setup
+@import "base/base",
+		"base/typography",
+		"base/form_styles";
+
+// Import layout components
+@import "layout/nav",
+		"layout/footer";
+
+// Import components
+@import "components/about-flash",
+		"components/pagination",
+		"components/page_header";
+
+// Import pages
+@import "homepage/home-base",
+		"blog/blog-base";
+
+@import "work/recent-work",
+		"work/single_work";
+
+@import "about",
+		"contact";
