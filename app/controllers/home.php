@@ -7,6 +7,7 @@ class Home extends Controller
 	{
 		$works = $this->model('WorksModel');
 		$blogs = $this->model('BlogModel');
+		$about = $this->model('AboutModel');
 
 		$headerdata = array(
 			"title" => "I am <span>Adam</span> <span>Moore</span> <small>I develop websites <span>and live in Dallas, TX</span></small>", 
@@ -19,7 +20,8 @@ class Home extends Controller
 		$this->view('home/index', array(
 			"headerdata" => $headerdata,
 			"worklist" => $worklist,
-			"bloglist" => $bloglist
+			"bloglist" => $bloglist,
+			"about-text" => $about->aboutText()
 		));
 	}
 }

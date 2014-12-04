@@ -3,7 +3,7 @@
 <?php getComponent("pageheader", $data['headerdata']); ?>
 
 <section class="homeabout">
-	<?php getComponent("about_flash"); ?>
+	<?php getComponent("about_flash", $data['about-text']); ?>
 </section>
 
 <section class="homecontent">

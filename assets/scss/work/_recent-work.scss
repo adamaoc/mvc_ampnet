@@ -1,60 +1,35 @@
-.recent-work {
-	.page-title {
-		span {
-			display: block;
-		}
-	}
-	.page-blurb {
-		max-width: 30em;
-		font-size: 1.3em;
-	}
-	.work-list {
+.work-list-page {
+	.worklist {
 		list-style: none;
-		@include bp(sm) {
-			padding-left: 2em;
-		}
-		li {
-			@include clearfix();
-			border-top: 0.5em solid lighten($secondary-color, 60%);
-			padding-top: 0.5em;
-			&:first-child {
-				border-top: none;
+	}
+	.workitem {
+		overflow: hidden;
+		padding: 1em;
+		border-bottom: 5px solid lighten($primary-color, 30%);
+	}
+	.details {
+		display: block;
+		overflow: hidden;
+		text-decoration: none;
+		.imgwrap {
+			text-align: center;
+			@include bp(sm) {
+				width: 30%;
+				float: left;
+			}
+			img {
+				max-width: 100%;
 			}
 		}
-	}
-	
-	.list-title {
-		padding-bottom: 1em;
-	}
-
-	.img-wrap {
-		max-width: 18.75rem;
-		@include bp(sm) {
-			width: 25%;
-			float: left;
-			padding-right: 0.5em;
+		.excerpt {
+			@include bp(sm) {
+				width: 70%;
+				float: left;
+				padding-left: 1em;
+				p {
+					margin-top: .5em;
+				}
+			}
 		}
-	}
-
-	.text-wrap {
-		@include bp(sm) {
-			width: 75%;
-			float: left;
-		}
-		p {
-			margin-top: 0;
-		}
-	}
-	.full-link {
-		background-color: $primary-color;
-		color: #fff;
-		display: block;
-		width: 100%;
-		line-height: 2.3;
-		text-align: center;
-		text-decoration: none;
-		box-shadow: inset 0 0 10px darken($primary-color, 10%);
-		font-family: $header-font;	
-		text-transform: uppercase;
 	}
 }

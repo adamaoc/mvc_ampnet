@@ -1,10 +1,6 @@
 <?php getHeader(); ?>
 
-<?php 
-	$headerdata = array("title" => "<h1>about <small>ampnet<span>(media)</span></small></h1>", "class" => "homeheader");
-	
-	getComponent("pageheader", $headerdata); 
-?>
+<?php getComponent("pageheader", $data['headerdata']); ?>
 <section class="main-about">
 	<div class="container">
 		

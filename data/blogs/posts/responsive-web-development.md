@@ -2,7 +2,7 @@
 * A talk for front-end devs looking to jump into RWD
 * 2014-01-23
 * webdev
-* http://ampnetmedia.com/assets/img/baseballfield-header-lg.jpg | http://ampnetmedia.com/assets/img/baseballfield-header-lg.jpg | http://ampnetmedia.com/assets/img/baseballfield-header-lg.jpg
+* http://ampnetmedia.com/assets/img/baseballfield-header-sm.jpeg | http://ampnetmedia.com/assets/img/baseballfield-header-lg.jpg | http://ampnetmedia.com/assets/img/baseballfield-header-lg.jpg
 * default
 * published
 * tag1, tag2, tag3, tag4
