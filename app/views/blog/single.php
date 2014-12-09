@@ -1,11 +1,8 @@
 <?php $post = $data['post']; ?>
 
-<?php getHeader(); ?>
-<?php 
-// Header
-// title | Sub title | photo | Color | 
-?>
-<?php getComponent("pageheader", $data['headerdata']); ?>
+<?php getHeader(array("nav" => $data['sitenav'], "headerdata" => $data['headerdata'])); ?>
+
+<?php getComponent("pageheader", $data['pageheader']); ?>
 <article class="container">
 	<div class="meta">
 		Posted on <?= $post['pubdate'] ?> | 
@@ -24,4 +21,4 @@
 		<a href="/blog/" class="btn">&laquo; back to blog list</a>
 	</p>
 </article>
-<?php getFooter(); ?>
+<?php getFooter($data['footerdata']); ?>

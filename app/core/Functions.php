@@ -21,12 +21,12 @@ function getShared($file, $data = []) {
 	return require_once $filepath;
 }
 
-function getHeader($options = []) {
+function getHeader($data = []) {
 
-	return getShared("header");
+	return getShared("header", $data);
 }
 
-function getFooter($options = []) { 
+function getFooter($data = []) { 
 
-	return getShared("footer");
+	return getShared("footer", $data);
 }

@@ -1,18 +1,31 @@
-<?php getHeader(); ?>
+<?php getHeader(array("nav" => $data['sitenav'], "headerdata" => $data['headerdata'])); ?>
 
-<?php getComponent("pageheader", $data['headerdata']); ?>
+<?php getComponent("pageheader", $data['pageheader']); ?>
 
 <section class="contact">
 	<div class="container">
 		
 
 		<section class="contact-content">
-			<h3> - (214) 702-6752 - Dallas, TX</h3>
-			<blockquote>Have questions or concerns for me? Shoot me an email here and I'll get back with you as soon as possible. Give me your name, email address, city where you reside, and a detailed message here. I love hearing from my clients and potential clients, so if you have any questions or concerns please do not hesitate to contact me!</blockquote>
+			<h3> - <?php /*(214) 702-6752 -*/ ?> Dallas, TX</h3>
+			<blockquote>
+				I try to be available to anyone who's trying to reach out to me. If you have questions or concerns the best way to get a hold of me is through social media. Shoot me a quick message on twitter or find me on linkedin. I'm currently not looking for new clients but if you are looking for a quote on a project you can still reach out to me in the same way.
+			<?php /*Have questions or concerns for me? Shoot me an email here and I'll get back with you as soon as possible. Give me your name, email address, city where you reside, and a detailed message here. I love hearing from my clients and potential clients, so if you have any questions or concerns please do not hesitate to contact me!*/ ?></blockquote>
 		</section>
 
-		<section class="contact-form">
-						
+		<section class="container">
+			<?php getComponent("social_list", $data['social-data']); ?>
+			<hr />
+			<?php getComponent("specialties_block", $data['specialties']); ?>
+		</section>
+	</div>
+		<?php getComponent("besection", $data['bedata']); ?>
+
+	<div class="container">	
+		<section class="contact-about">
+			<blockquote><?= $data['about-text'] ?></blockquote>
+			
+				<?php /*		
 			<form role="form" action="" method="post" class="stacked-form">
 				<div class="form-group">
 					<label for="name">Full Name:</label>
@@ -46,9 +59,9 @@
 				<input type="submit" value="Send!" class="btn-submit" />
 				<input type="hidden" name="site" value="ampnetmedia">
 				<input type="hidden" name="token" value="816a845c051917b9fe7d38166aa0828b">
-			</form>
+			</form> */ ?>
 		</section>
 	<div>
 </section>
 
-<?php getFooter(); ?>
+<?php getFooter($data['footerdata']); ?>

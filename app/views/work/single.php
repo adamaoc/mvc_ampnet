@@ -1,15 +1,15 @@
 <?php $post = $data['post']; ?>
 
-<?php getHeader(); ?>
+<?php getHeader(array("nav" => $data['sitenav'], "headerdata" => $data['headerdata'])); ?>
 <?php 
 // Header
 // title | Sub title | photo | Color | 
 ?>
-<?php getComponent("pageheader", $data['headerdata']); ?>
+<?php getComponent("pageheader", $data['pageheader']); ?>
 <article class="container">
 	<div class="meta">
-		Posted on <?= $post['pubdate'] ?> | 
-		Category <?= $post['category'] ?>
+		Published on <?= $post['pubdate'] ?> | 
+		visit <a href="http://<?= $post['category'] ?>" target="_blank"><?= $post['category'] ?></a>
 	</div>
 	<div class="post">
 		<?= $post['content'] ?>
@@ -24,4 +24,4 @@
 		<a href="/work/" class="btn">&laquo; back to work list</a>
 	</p>
 </article>
-<?php getFooter(); ?>
+<?php getFooter($data['footerdata']); ?>

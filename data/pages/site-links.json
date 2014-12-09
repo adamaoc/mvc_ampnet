@@ -1,0 +1,38 @@
+{
+	"siteLinks": [{
+		"pagename": "Home",
+		"slug": "home",
+		"image": "#home",
+		"details": "Homepage",
+		"link": "/",
+		"target": "_self"
+	},{
+		"pagename": "About",
+		"slug": "about",
+		"image": "#about",
+		"details": "About ampnetmedia",
+		"link": "/about/",
+		"target": "_self"
+	},{
+		"pagename": "Works",
+		"slug": "work",
+		"image": "#work",
+		"details": "Adam Moore's Portfolio of Work",
+		"link": "/work/",
+		"target": "_self"
+	},{
+		"pagename": "Blog",
+		"slug": "blog",
+		"image": "#blog",
+		"details": "Adam Moore's blog posts",
+		"link": "/blog/",
+		"target": "_self"
+	},{
+		"pagename": "Contact",
+		"slug": "contact",
+		"image": "#contact",
+		"details": "Contact ampnetmdia",
+		"link": "/contact/",
+		"target": "_self"
+	}]
+}

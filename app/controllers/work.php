@@ -22,17 +22,28 @@ class Work extends Controller
 	private function getSingle($model, $slug)
 	{
 		$post = $model->getPost($slug);
-		
+		$linksdata = $this->model('linksModel');
+		$sitenav = $linksdata->getSiteLinks();
+		$footerdata = $linksdata->footerLinks();
+
 		$headerdata = array(
+			"title" => $post['title']." ".$post['subtitle'],
+			"description" => strip_tags($post['excerpt'])
+		);
+
+		$pageheader = array(
 			"title" => $post['title'], 
 			"class" => "page-header", 
-			"subtitle" => $post['subtitle'], 
+			"subtitle" => "<small>".$post['subtitle']."</small>", 
 			"heroimg" => "background-image: url(/assets/img/".$post['imglg'].");", 
 			"postcolor" => "background-color: ".$post['color'].";"
 		);
 
 		$this->view('work/single', array(
 			'headerdata' => $headerdata,
+			'sitenav' => $sitenav,
+			'pageheader' => $pageheader,
+			'footerdata' => $footerdata,
 			'title' => $model->pageTitle,
 			'slogan' => $model->pageSlogan,
 			"post" => $post
@@ -67,7 +78,16 @@ class Work extends Controller
 
 		$list = $model->getList($minpage,$maxpage);
 
+		$linksdata = $this->model('linksModel');
+		$sitenav = $linksdata->getSiteLinks();
+		$footerdata = $linksdata->footerLinks();
+
 		$headerdata = array(
+			"title" => "Portfolio ampnet media Works - the Dallas, Texas Freelance Web Developer who is looking to help take your company get online. / Adam Moore developing in Dallas, Texas",
+			"description" => "The ampnetmedia Portfolio is filled with work that I have done for small businesses in and around the DFW area. I pride myself on great quality of work and don't mind showing it off."
+		);
+
+		$pageheader = array(
 			"title" => "Portfolio", 
 			"subtitle" => "<small>by ampnet<span>(media)</span></small>", 
 			"class" => "page-header",
@@ -76,6 +96,9 @@ class Work extends Controller
 
 		$this->view('work/index', array(
 			'headerdata' => $headerdata,
+			'sitenav' => $sitenav,
+			'pageheader' => $pageheader,
+			'footerdata' => $footerdata,
 			'title' => $model->pageTitle,
 			'slogan' => $model->pageSlogan,
 			'list' => $list,

@@ -22,8 +22,16 @@ class Blog extends Controller
 	private function getSingle($model, $slug)
 	{
 		$post = $model->getPost($slug);
-		
+		$linksdata = $this->model('linksModel');
+		$sitenav = $linksdata->getSiteLinks();
+		$footerdata = $linksdata->footerLinks();
+
 		$headerdata = array(
+			"title" => $post['title']." ".$post['subtitle'],
+			"description" => strip_tags($post['excerpt'])
+		);
+
+		$pageheader = array(
 			"title" => $post['title'], 
 			"class" => "page-header", 
 			"subtitle" => $post['subtitle'], 
@@ -33,6 +41,9 @@ class Blog extends Controller
 
 		$this->view('blog/single', array(
 			'headerdata' => $headerdata,
+			'sitenav' => $sitenav,
+			'pageheader' => $pageheader,
+			'footerdata' => $footerdata,
 			'title' => $model->pageTitle,
 			'slogan' => $model->pageSlogan,
 			"post" => $post
@@ -67,7 +78,16 @@ class Blog extends Controller
 
 		$list = $model->getList($minpage,$maxpage);
 
+		$linksdata = $this->model('linksModel');
+		$sitenav = $linksdata->getSiteLinks();
+		$footerdata = $linksdata->footerLinks();
+
 		$headerdata = array(
+			"title" => "Blog ampnet media Works - the Dallas, Texas Freelance Web Developer who is looking to help take your company get online. / Adam Moore developing in Dallas, Texas",
+			"description" => "The ampnet media blog is full of technical information and useful web knowledge. You'll also find some writings about travel, the automotive industry, and more randomness."
+		);
+
+		$pageheader = array(
 			"title" => "Bloging", 
 			"subtitle" => "<small>with ampnet<span>(media)</span></small>", 
 			"class" => "page-header",
@@ -76,6 +96,9 @@ class Blog extends Controller
 
 		$this->view('blog/index', array(
 			'headerdata' => $headerdata,
+			'sitenav' => $sitenav,
+			'pageheader' => $pageheader,
+			'footerdata' => $footerdata,
 			'title' => $model->pageTitle,
 			'slogan' => $model->pageSlogan,
 			'list' => $list,

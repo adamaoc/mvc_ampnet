@@ -1,6 +1,6 @@
-<?php getHeader(); ?>
+<?php getHeader(array("nav" => $data['sitenav'], "headerdata" => $data['headerdata'])); ?>
 
-<?php getComponent("pageheader", $data['headerdata']); ?>
+<?php getComponent("pageheader", $data['pageheader']); ?>
 
 <section class="work-list-page">
 
@@ -11,4 +11,4 @@
 
 </section>
 
-<?php getFooter(); ?>
+<?php getFooter($data['footerdata']); ?>
