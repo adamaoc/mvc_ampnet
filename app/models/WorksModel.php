@@ -37,7 +37,7 @@ class WorksModel
 		return $buildarr;
 	}
 
-	private function getAllPosts()
+	public function getAllPosts()
 	{
 		$buildarr = array();
 
