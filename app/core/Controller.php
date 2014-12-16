@@ -12,4 +12,10 @@ class Controller
 	{
 		require_once 'app/views/'.$view.'.php';
 	}
+
+	public function helper($helper)
+	{
+		require_once 'app/helpers/'.$helper.'.php';
+		return new $helper();
+	}
 }

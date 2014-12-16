@@ -6,7 +6,7 @@ getHeader(array(
 
 getComponent("pageheader", $data['pageheader']);
 
-getFlexView("login", $data['token']);
+getFlexView("dashboard");
 
 getFooter($data['footerdata']);
 
