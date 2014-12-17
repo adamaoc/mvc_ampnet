@@ -1,6 +1,6 @@
 * M&J Construction and Remodeling
 * Dallas, Texas Construction and Remodeling Company.
-* 2014-07-1
+* 2014-07-01
 * mandjdfw.com
 * MandJ-2-rwd-stack.png | MandJ-2-rwd-stack.png | MandJ-2-rwd-stack.png
 * 171, 88, 32, 0.5
