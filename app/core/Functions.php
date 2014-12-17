@@ -11,28 +11,6 @@ function getComponent($file, $data = []) {
 
 }
 
-function getFlexHubComponent($file, $data = []) {
-
-	$docroot = $_SERVER['DOCUMENT_ROOT'];
-	$dirpath = $docroot."/app/views/flexhub/components/";
-
-	$filepath = $dirpath.$file.".php";
-
-	return require_once $filepath;
-	
-}
-
-function getFlexView($file, $data = []) {
-
-	$docroot = $_SERVER['DOCUMENT_ROOT'];
-	$dirpath = $docroot."/app/views/flexhub/views/";
-
-	$filepath = $dirpath.$file.".php";
-
-	return require_once $filepath;
-	
-}
-
 function getShared($file, $data = []) {
 
 	$docroot = $_SERVER['DOCUMENT_ROOT'];

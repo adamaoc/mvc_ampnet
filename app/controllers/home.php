@@ -33,9 +33,10 @@ class Home extends Controller
 			"title" => "Home Page of ampnetmedia - the Dallas, Texas Freelance Web Developer who is looking to help take your company get online. / Adam Moore developing in Dallas, Texas",
 			"description" => $about->aboutText()
 		);
+//"title" => "I am <span>Adam</span> <span>Moore</span> <small>I develop websites <span>and live in Dallas, TX</span></small>", 
 
 		$pageheader = array(
-			"title" => "I am <span>Adam</span> <span>Moore</span> <small>I develop websites <span>and live in Dallas, TX</span></small>", 
+			"title" => "This is <span>ampnet (media)</span><small>developing websites <span> in Dallas, Texas</span></small>",
 			"class" => "homeheader"
 		);
 
