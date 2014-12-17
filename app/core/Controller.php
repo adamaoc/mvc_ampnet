@@ -10,12 +10,12 @@ class Controller
 
 	public function view($view, $data = array())
 	{
-		require_once 'app/views/'.$view.'.php';
+		require_once '/app/views/'.$view.'.php';
 	}
 
 	public function helper($helper)
 	{
-		require_once 'app/helpers/'.$helper.'.php';
+		require_once '/app/helpers/'.$helper.'.php';
 		return new $helper();
 	}
 }
