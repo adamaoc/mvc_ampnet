@@ -7,7 +7,7 @@ function sitemapBuilder($pages) {
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
 
 	$xmlblock .= "<url>
-		<loc>".$baseurl."/</loc>
+		<loc>http://".$baseurl."/</loc>
 		<lastmod>".date('Y-m-d')."</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1</priority>
@@ -15,7 +15,7 @@ function sitemapBuilder($pages) {
 
 	foreach ($pages['mainlinks'] as $link) :
 		$xmlblock .= "<url>
-			<loc>".$baseurl."/".$link['slug']."/</loc>
+			<loc>http://".$baseurl."/".$link['slug']."/</loc>
 			<lastmod>".date('Y-m-d')."</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
@@ -24,7 +24,7 @@ function sitemapBuilder($pages) {
 
 	foreach ($pages['bloglist'] as $link) :
 		$xmlblock .= "<url>
-			<loc>".$baseurl."/blog/".$link['slug']."/</loc>
+			<loc>http://".$baseurl."/blog/".$link['slug']."/</loc>
 			<lastmod>".$link['pubdate']."</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
@@ -33,7 +33,7 @@ function sitemapBuilder($pages) {
 
 	foreach ($pages['worklist'] as $link) :
 		$xmlblock .= "<url>
-			<loc>".$baseurl."/work/".$link['slug']."/</loc>
+			<loc>http://".$baseurl."/work/".$link['slug']."/</loc>
 			<lastmod>".$link['pubdate']."</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
@@ -42,7 +42,7 @@ function sitemapBuilder($pages) {
 
 	foreach ($pages['locallist'] as $link) :
 		$xmlblock .= "<url>
-			<loc>".$baseurl."/".$link."/</loc>
+			<loc>http://".$baseurl."/".$link."/</loc>
 			<lastmod>".date('Y-m-d')."</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
