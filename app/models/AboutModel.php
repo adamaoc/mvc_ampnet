@@ -5,7 +5,7 @@ class AboutModel
 	public $dataroot = "data/pages/";
 	public $api = "about-data.json";
 
-	public function aboutText($option)
+	public function aboutText($option = '')
 	{
 		$data = file_get_contents($this->dataroot.$this->api);
 		$data = json_decode($data);
