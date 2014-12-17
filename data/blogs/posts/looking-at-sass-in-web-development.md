@@ -1,6 +1,6 @@
 * Looking at Sass in Web Development
 * A talk for Front-End Developers
-* 2014-2-14
+* 2014-02-14
 * webdev
 * http://ampnetmedia.com/assets/img/sass-blog-img.png | http://ampnetmedia.com/assets/img/sass-blog-img.png | http://ampnetmedia.com/assets/img/sass-blog-img.png
 * default

@@ -1,6 +1,6 @@
 * Getting Started with Zurb Foundation5
 * A talk for Front-End Web Developers
-* 2014-5-15
+* 2014-05-15
 * webdev
 * http://ampnetmedia.com/assets/img/zurb-blog-img.svg | http://ampnetmedia.com/assets/img/zurb-blog-img.svg | http://ampnetmedia.com/assets/img/zurb-blog-img.svg
 * default

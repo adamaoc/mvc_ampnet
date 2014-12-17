@@ -1,6 +1,6 @@
 * ORG Websites
 * Building websites at an affordable price because we care.
-* 2014-6-1
+* 2014-06-1
 * org-websites.com
 * org-websites-ChromeBook.png | org-websites-ChromeBook.png | org-websites-ChromeBook.png
 * 0, 124, 0, 0.3

@@ -1,6 +1,6 @@
 * The long drive home
 * my time with the 2015 Hyundai Sonata
-* 2014-7-31
+* 2014-07-31
 * automotive
 * http://txgarage.com/images/2014/07/2015-Hyundai-Sonata-003-400x300.jpg | http://txgarage.com/images/2014/07/2015-Hyundai-Sonata-003-400x300.jpg | http://txgarage.com/images/2014/07/2015-Hyundai-Sonata-003.jpg
 * rgba(70,94,126,0.6)

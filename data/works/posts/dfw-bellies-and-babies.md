@@ -1,6 +1,6 @@
 * DFW Bellies and Babies
 * Photographing your child from belly to baby.
-* 2014-5-1
+* 2014-05-1
 * dfwbelliesandbabies.com
 * dfwBnB-ChromeBook.png | dfwBnB-ChromeBook.png | dfwBnB-ChromeBook.png
 * 157, 32, 171, 0.4

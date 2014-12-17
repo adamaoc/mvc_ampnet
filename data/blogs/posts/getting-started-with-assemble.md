@@ -1,6 +1,6 @@
 * Getting Started with Assemble
 * the Static Site Generator
-* 2014-6-13
+* 2014-06-13
 * webdev
 * http://ampnetmedia.com/assets/img/Puzzle-pieces.jpg | http://ampnetmedia.com/assets/img/Puzzle-pieces.jpg | http://ampnetmedia.com/assets/img/Puzzle-pieces.jpg
 * default

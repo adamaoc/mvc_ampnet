@@ -1,6 +1,6 @@
 * SVG and SVG Sprites
 * Making better responsive icons
-* 2014-8-21
+* 2014-08-21
 * webdev
 * http://ampnetmedia.com/assets/img/sandcastle.jpg | http://ampnetmedia.com/assets/img/sandcastle.jpg | http://ampnetmedia.com/assets/img/sandcastle.jpg
 * default

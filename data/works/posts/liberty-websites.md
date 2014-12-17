@@ -1,6 +1,6 @@
 * Liberty Websites
 * We build websites for political groups and candidates.
-* 2014-5-1
+* 2014-05-1
 * liberty-websites.com
 * liberty-websites-ChromeBook.png | liberty-websites-ChromeBook.png | liberty-websites-ChromeBook.png
 * 107, 20, 29, 0.4

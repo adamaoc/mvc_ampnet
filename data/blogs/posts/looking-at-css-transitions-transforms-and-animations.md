@@ -1,6 +1,6 @@
 * Looking at CSS Transitions, Transforms, and Animations
 * A talk for Front-End Web Developers
-* 2014-3-10
+* 2014-03-10
 * webdev
 * http://ampnetmedia.com/assets/img/css-animate-blog.png | http://ampnetmedia.com/assets/img/css-animate-blog.png | http://ampnetmedia.com/assets/img/css-animate-blog.png
 * default
