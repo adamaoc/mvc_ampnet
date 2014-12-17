@@ -11,12 +11,14 @@ class Controller
 
 	public function view($view, $data = array())
 	{
-		require_once '/app/views/'.$view.'.php';
+		$path = $_SERVER['DOCUMENT_ROOT'].'/app/views/'.$view.'.php';
+		require_once $path;
 	}
 
 	public function helper($helper)
 	{
-		require_once '/app/helpers/'.$helper.'.php';
+		$path = $_SERVER['DOCUMENT_ROOT'].'/app/helpers/'.$helper.'.php';
+		require_once $path;
 		return new $helper();
 	}
 }
