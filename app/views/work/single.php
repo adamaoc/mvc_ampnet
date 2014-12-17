@@ -16,9 +16,7 @@
 	</div>
 
 	<div class="tags-wrap">
-		<?php foreach ($post['tagsarr'] as $tag) : ?>
-			<a href="#"><?= $tag ?></a>
-		<?php endforeach; ?>
+		<?php //getComponent("tag_list", $post['tagsarr']); ?>
 	</div>
 	<p>
 		<a href="/work/" class="btn">&laquo; back to work list</a>
