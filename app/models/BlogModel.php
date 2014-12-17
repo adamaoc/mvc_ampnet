@@ -10,6 +10,8 @@ class BlogModel
 
 	public $workslistarr = array();
 
+	public $tagcount = '';
+
 	public function getNumbPosts()
 	{
 		$directory = $this->blogdir;
@@ -35,6 +37,32 @@ class BlogModel
 
 		$this->workslistarr = $buildarr;
 		return $buildarr;
+	}
+
+	public function getPostTags($tag)
+	{
+		$taglist = $this->getTagList();
+	}
+
+	public function getTagList() 
+	{
+		$list = $this->getAllPosts();
+
+		$taglist = array();
+		$tagcount = array();
+
+		foreach ($list as $post) {
+			foreach ($post['tagsarr'] as $tag) {
+				if(in_array($tag, $taglist)) {
+					$tagcount[$tag]++;
+				}else {
+					$taglist[] .= $tag;
+				}
+			}
+		}
+
+		$this->tagcount = $tagcount;
+		return $taglist;
 	}
 
 	public function getAllPosts()

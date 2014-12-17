@@ -5,7 +5,7 @@
 * http://ampnetmedia.com/assets/img/Puzzle-pieces.jpg | http://ampnetmedia.com/assets/img/Puzzle-pieces.jpg | http://ampnetmedia.com/assets/img/Puzzle-pieces.jpg
 * default
 * published
-* tag1, tag2, tag3, tag4
+* assemble, gurnt, javascript, generator
 
 Assemble is a Grunt task which runs off of Node so you use `npm` as your package manager to install assemble to your project. The `--save-dev` saves this to your package.json file so that it can easily be installed anytime someone starts up new with your project.
 

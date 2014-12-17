@@ -7,11 +7,11 @@
 		"link": "/",
 		"target": "_self"
 	},{
-		"pagename": "About",
-		"slug": "about",
-		"image": "#about",
-		"details": "About ampnetmedia",
-		"link": "/about/",
+		"pagename": "Blog",
+		"slug": "blog",
+		"image": "#blog",
+		"details": "Adam Moore's blog posts",
+		"link": "/blog/",
 		"target": "_self"
 	},{
 		"pagename": "Works",
@@ -21,11 +21,11 @@
 		"link": "/work/",
 		"target": "_self"
 	},{
-		"pagename": "Blog",
-		"slug": "blog",
-		"image": "#blog",
-		"details": "Adam Moore's blog posts",
-		"link": "/blog/",
+		"pagename": "About",
+		"slug": "about",
+		"image": "#about",
+		"details": "About ampnetmedia",
+		"link": "/about/",
 		"target": "_self"
 	},{
 		"pagename": "Contact",

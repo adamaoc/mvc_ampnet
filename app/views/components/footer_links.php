@@ -15,7 +15,10 @@
 			<?= $link['slug'] ?>
 		</a>
 	</li>
-<?php endforeach; ?>	
+<?php endforeach; ?>
+	<li class="sitemap">
+		<a href="/sitemap/">sitemap</a>
+	</li>	
 </ul>
 
 <ul class="local-links">

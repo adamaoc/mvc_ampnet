@@ -19,6 +19,37 @@ class Blog extends Controller
 		}
 	}
 
+	public function tag($tag = '')
+	{
+		$model = $this->model('BlogModel');
+
+		$taglist = $model->getTagList();
+
+		// print_r($taglist);
+
+		$linksdata = $this->model('linksModel');
+		$sitenav = $linksdata->getSiteLinks();
+		$footerdata = $linksdata->footerLinks();
+
+		$headerdata = array(
+			"title" => "Blog ampnet media Works - the Dallas, Texas Freelance Web Developer who is looking to help take your company get online. / Adam Moore developing in Dallas, Texas",
+			"description" => "The ampnet media blog is full of technical information and useful web knowledge. You'll also find some writings about travel, the automotive industry, and more randomness."
+		);
+
+		$pageheader = array(
+			"title" => "Bloging", 
+			"subtitle" => "<small>Searching for <span>(".$tag.")</span></small>", 
+			"class" => "page-header",
+			"heroimg" => "background-image: url(/assets/img/home-banner.jpg);"
+		);
+
+		$this->view('blog/index', array(
+			'headerdata' => $headerdata,
+			'sitenav' => $sitenav,
+			'pageheader' => $pageheader,
+			'footerdata' => $footerdata));		
+	}
+
 	private function getSingle($model, $slug)
 	{
 		$post = $model->getPost($slug);
