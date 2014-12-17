@@ -8,7 +8,7 @@ class Home extends Controller
 		$works = $this->model('WorksModel');
 		$blogs = $this->model('BlogModel');
 		$about = $this->model('AboutModel');
-		$linksdata = $this->model('linksModel');
+		$linksdata = $this->model('LinksModel');
 		$sitenav = $linksdata->getSiteLinks();
 		$footerdata = $linksdata->footerLinks();
 

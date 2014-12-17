@@ -4,7 +4,8 @@ class Controller
 {
 	public function model($model)
 	{
-		require_once '/app/models/'.$model.'.php';
+		$path = $_SERVER['DOCUMENT_ROOT'].'/app/models/'.$model.'.php';
+		require_once $path;
 		return new $model();
 	}
 
