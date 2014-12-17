@@ -5,7 +5,7 @@ class App
 
 	protected $controller = 'home';
 	protected $method = 'index';
-	protected $params = [];
+	protected $params = array();
 
 	public function __construct()
 	{
