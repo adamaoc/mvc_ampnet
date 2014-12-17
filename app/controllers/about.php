@@ -5,7 +5,7 @@ class About extends Controller
 	public function index()
 	{
 		$about = $this->model('AboutModel');
-		$linksdata = $this->model('linksModel');
+		$linksdata = $this->model('LinksModel');
 		$sitenav = $linksdata->getSiteLinks();
 		$footerdata = $linksdata->footerLinks();
 

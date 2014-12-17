@@ -7,7 +7,7 @@ class Sitemap extends Controller
 	public function __construct() 
 	{
 
-		$linksdata = $this->model('linksModel');
+		$linksdata = $this->model('LinksModel');
 		$blogs = $this->model('BlogModel');
 		$works = $this->model('WorksModel');
 		$locals = $this->model('LocalsModel');
@@ -29,7 +29,7 @@ class Sitemap extends Controller
 
 	public function index()
 	{
-		$linksdata = $this->model('linksModel');
+		$linksdata = $this->model('LinksModel');
 		$sitenav = $linksdata->getSiteLinks();
 		$footerdata = $linksdata->footerLinks();
 

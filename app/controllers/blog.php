@@ -27,7 +27,7 @@ class Blog extends Controller
 
 		// print_r($taglist);
 
-		$linksdata = $this->model('linksModel');
+		$linksdata = $this->model('LinksModel');
 		$sitenav = $linksdata->getSiteLinks();
 		$footerdata = $linksdata->footerLinks();
 
@@ -53,7 +53,7 @@ class Blog extends Controller
 	private function getSingle($model, $slug)
 	{
 		$post = $model->getPost($slug);
-		$linksdata = $this->model('linksModel');
+		$linksdata = $this->model('LinksModel');
 		$sitenav = $linksdata->getSiteLinks();
 		$footerdata = $linksdata->footerLinks();
 
@@ -109,7 +109,7 @@ class Blog extends Controller
 
 		$list = $model->getList($minpage,$maxpage);
 
-		$linksdata = $this->model('linksModel');
+		$linksdata = $this->model('LinksModel');
 		$sitenav = $linksdata->getSiteLinks();
 		$footerdata = $linksdata->footerLinks();
 

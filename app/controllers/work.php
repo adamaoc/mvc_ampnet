@@ -22,7 +22,7 @@ class Work extends Controller
 	private function getSingle($model, $slug)
 	{
 		$post = $model->getPost($slug);
-		$linksdata = $this->model('linksModel');
+		$linksdata = $this->model('LinksModel');
 		$sitenav = $linksdata->getSiteLinks();
 		$footerdata = $linksdata->footerLinks();
 
@@ -78,7 +78,7 @@ class Work extends Controller
 
 		$list = $model->getList($minpage,$maxpage);
 
-		$linksdata = $this->model('linksModel');
+		$linksdata = $this->model('LinksModel');
 		$sitenav = $linksdata->getSiteLinks();
 		$footerdata = $linksdata->footerLinks();
 
