@@ -5,7 +5,7 @@
 	.work-list {
 		overflow: hidden;
 	}
-	li {
+	.blogitem {
 		@include bp(sm) {
 			width: 33.33%;
 			float: left;
