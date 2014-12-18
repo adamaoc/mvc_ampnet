@@ -121,6 +121,7 @@ class WorksModel
    		}
 
     	$blog_intro = Parsedown::instance()->parse($excerpt);
+    	$blog_intro = strip_tags($blog_intro);
 
     	// Get the whole post
     	$blog_content = Parsedown::instance()->parse(join('', array_slice($post, 9)));
