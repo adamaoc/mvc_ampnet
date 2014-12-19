@@ -2,7 +2,7 @@
 * a powerful real-time api
 * 2014-12-17
 * webdev
-* https://dl.dropboxusercontent.com/u/65131811/firebase-screenshot.png | https://dl.dropboxusercontent.com/u/65131811/firebase-screenshot.png | https://dl.dropboxusercontent.com/u/65131811/firebase-screenshot.png
+* http://ampnetmedia.com/assets/img/blog/firebase/firebase-screenshot-thumb.png | http://ampnetmedia.com/assets/img/blog/firebase/firebase-screenshot-thumb.png | http://ampnetmedia.com/assets/img/blog/firebase/firebase-screenshot.png
 * default
 * published
 * firebase, api, js, baas
