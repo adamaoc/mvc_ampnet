@@ -24,6 +24,8 @@
 
         <meta property="twitter:account_id" content="32184368" />
 
+        <script src="/assets/js/vendor/modernizer.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
