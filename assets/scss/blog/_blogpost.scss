@@ -1,39 +1,18 @@
-.single-blogpost {
-	.blogheader {
-		background-size: cover;
-		background-position: center center;
-		background-color: #444;
-		background-repeat: no-repeat;
-		color: #fff;
-		@include clearfix();
-		h1 {
-			text-align: right;
-			float: right;
-			padding: 3rem 1rem;
-			background-color: rgba($primary-color, 0.3);
-			transition: 0.3s ease-in-out all;
-			font-size: 3em;
-			@include bp(sm) {
-				padding-right: 3rem;
-				min-width: 55%;
-				font-size: 5em;
-			}
-			span {
-				display: block;
-				color: #fff;
-			}
-			small {
-				font-size: 1.5rem;
-				display: block;
-				line-height: 1.2;
-				letter-spacing: 0.07em;
-			}
-		}
+.meta {
+	max-width: 45em;
+	margin: 0 auto;
+}
+.post {
+	max-width: 45em;
+	margin: 0 auto;
+	img {
+		max-width: 100%;
 	}
-	.contents {
-		max-width: 38rem;
-		img {
-			max-width: 100%;
+
+	.codepen-code {
+		@include bp(md) {
+			margin-left: -5em;
+			margin-right: -5em;
 		}
 	}
 }
