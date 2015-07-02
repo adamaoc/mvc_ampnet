@@ -1,7 +1,7 @@
 * Building Modern Web Apps
 * With Web Components
 * date (2015-07-02)
-* category (webdev)
+* webdev
 * /assets/img/blog/web-components/building-modern-web-applications-with-web-components-small.jpeg | /assets/img/blog/web-components/building-modern-web-applications-with-web-components-small.jpeg | /assets/img/blog/web-components/building-modern-web-applications-with-web-components.jpg
 * default
 * published
