@@ -41,6 +41,9 @@ $transition: all 0.3s ease-in-out;
 	.automotive .card-blog {
 		border-top: 8px solid #2CA9E1;
 	}
+	.tech .card-blog {
+		border-top: 8px solid #6DB76E;
+	}
 	.title-wrap {
 		position: relative;
 		width: 100%;
@@ -54,7 +57,7 @@ $transition: all 0.3s ease-in-out;
 		position: absolute;
 		top: 0;
 		bottom: 0;
-		left: 0; 
+		left: 0;
 		right: 0;
 		background: rgba($primary-color, 0.5);
 		transition: $transition;
