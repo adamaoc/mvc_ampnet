@@ -1,4 +1,4 @@
-<h2>About me</h2>
+<h2>About Adam</h2>
 <div class="img-wrap">
 	<img src="/assets/img/about-me.jpg" alt="About Adam Moore and ampnet media - Dallas web development" />
 </div>

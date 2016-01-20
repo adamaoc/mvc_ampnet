@@ -3,15 +3,15 @@
 <?php getComponent("pageheader", $data['pageheader']); ?>
 <section class="main-about">
 	<div class="container">
-		
+
 		<blockquote>
 			<?= $data['about-text'] ?>
 		</blockquote>
 
 		<h2>specialties</h2>
 		<?php getComponent("specialties_block", $data['specialties']); ?>
-		
-		<h2>more about me</h2>
+
+		<h2>more about Adam</h2>
 		<?php getComponent("moreabout", $data['moreaboutText']); ?>
 
 		<?php getComponent('social_list', $data['social-data']); ?>
