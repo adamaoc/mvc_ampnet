@@ -2,7 +2,7 @@
 * Promo Videos for TXGARAGE review of the Mazda MX-5 RF
 * 2017-09-07
 * youtu.be/T5aE_BOAwz4
-* works/Mazda/mazda-cover.jpg
+* works/Mazda/mazda-cover.jpg | works/Mazda/mazda-cover.jpg | works/Mazda/mazda-cover.jpg
 * 198, 47, 62, 0.7
 * video
 * mazda, mx-5 rf, video, promo
