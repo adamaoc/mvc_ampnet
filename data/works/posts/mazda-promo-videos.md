@@ -17,7 +17,7 @@ Below are vertical and horizontal videos that were used on Instagram, Facebook, 
   Your browser does not support the video tag.
 </video>
 <br>
-<video width="240" height="320" controls controlsList="nodownload">
+<video width="240" height="420" controls controlsList="nodownload">
   <source src="/assets/img/works/Mazda/Instagram-Vertical.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
