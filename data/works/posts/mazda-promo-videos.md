@@ -11,12 +11,12 @@ Wednesday this week, we published the TXGARAGE review of the 2017 Mazda MX-5 RF.
 
 Below are vertical and horizontal videos that were used on Instagram, Facebook, and Snapchat to promote the MX-5 RF video on YouTube.
 
-<video width="320" height="240" controls>
+<video width="320" height="240" controls controlsList="nodownload">
   <source src="/assets/img/works/Mazda/Instagram-Horizontal.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-<video width="240" height="320" controls>
+<video width="240" height="320" controls controlsList="nodownload">
   <source src="/assets/img/works/Mazda/Instagram-Vertical.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
