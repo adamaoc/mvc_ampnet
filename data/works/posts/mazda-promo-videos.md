@@ -2,7 +2,7 @@
 * Promo Videos for TXGARAGE
 * 2017-09-07
 * youtu.be/T5aE_BOAwz4
-* works/mazda/mazda-cover.jpg
+* works/Mazda/mazda-cover.jpg
 * 198, 47, 62, 0.7
 * video
 * mazda, mx-5 rf, video, promo
@@ -12,11 +12,11 @@ Wednesday this week, we published the TXGARAGE review of the 2017 Mazda MX-5 RF.
 Below are vertical and horizontal videos that were used on Instagram, Facebook, and Snapchat to promote the MX-5 RF video on YouTube.
 
 <video width="320" height="240" controls>
-  <source src="/assets/img/works/mazda/Instagram-Horizontal.mp4" type="video/mp4">
+  <source src="/assets/img/works/Mazda/Instagram-Horizontal.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 <video width="240" height="320" controls>
-  <source src="/assets/img/works/mazda/Instagram-Vertical.mp4" type="video/mp4">
+  <source src="/assets/img/works/Mazda/Instagram-Vertical.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
