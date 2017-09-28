@@ -11,4 +11,4 @@ My son's school went to the Dallas Zoo for a field trip and I was happy to be a 
 
 This was my son's first trip to any zoo and this was my first dad vlog.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yAUckAbetPQ?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/yAUckAbetPQ?rel=0" frameborder="0" allowfullscreen></iframe>
