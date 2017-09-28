@@ -3,7 +3,7 @@
 * 2017-04-14
 * video
 * http://i3.ytimg.com/vi/yAUckAbetPQ/maxresdefault.jpg | http://i3.ytimg.com/vi/yAUckAbetPQ/maxresdefault.jpg | http://i3.ytimg.com/vi/yAUckAbetPQ/maxresdefault.jpg
-* #bb0000
+* rgba(204,24,30,0.7)
 * published
 * vlog, video, dallas, zoo
 
