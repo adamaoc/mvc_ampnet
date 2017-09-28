@@ -85,7 +85,7 @@ class Home extends Controller
 		);
 
 		$pageheader = array(
-			"title" => $city.', '.$state."<span>ampnet</span> <span>media</span> <small>Web Development – Web Video – Web Advertising – Social Media  <span> in ".$innear." ".$city.', '.$state."</span></small>", 
+			"title" => $city.', '.$state."<span>ampnet</span> <span>media</span> <small>Web Development – Web Video – Web Advertising – Social Media  <span> ".$innear." ".$city.', '.$state."</span></small>", 
 			"class" => "homeheader"
 		);
 
