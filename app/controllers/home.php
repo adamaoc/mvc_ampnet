@@ -30,13 +30,13 @@ class Home extends Controller
 		}
 
 		$headerdata = array(
-			"title" => "Home Page of ampnetmedia - the Dallas, Texas Freelance Web Developer who is looking to help take your company get online. / Adam Moore developing in Dallas, Texas",
+			"title" => "Home Page of ampnet media - the Dallas, Texas Freelance Web Development – Web Video – Web Advertising – Social Media / Adam Moore - Dallas, Texas",
 			"description" => $about->aboutText()
 		);
 //"title" => "I am <span>Adam</span> <span>Moore</span> <small>I develop websites <span>and live in Dallas, TX</span></small>", 
 
 		$pageheader = array(
-			"title" => "This is <span>ampnet (media)</span><small>developing websites <span> in Dallas, Texas</span></small>",
+			"title" => "This is <span>ampnet (media)</span><small>Web Development – Web Video – Web Advertising – Social Media  <span> in Dallas, Texas</span></small>",
 			"class" => "homeheader"
 		);
 
@@ -80,12 +80,12 @@ class Home extends Controller
 		}
 
 		$headerdata = array(
-			"title" => "Home Page of ampnetmedia - the Dallas, Texas Freelance Web Developer who is looking to help take your company get online. / Adam Moore developing in Dallas, Texas",
+			"title" => "Home Page of ampnetmedia - the Dallas, Texas Freelance Web Development – Web Video – Web Advertising – Social Media  / Adam Moore - Dallas, Texas",
 			"description" => ""
 		);
 
 		$pageheader = array(
-			"title" => $city.', '.$state."<span>Website</span> <span>Development</span> <small>I develop websites <span>and live ".$innear." ".$city.', '.$state."</span></small>", 
+			"title" => $city.', '.$state."<span>ampnet</span> <span>media</span> <small>Web Development – Web Video – Web Advertising – Social Media  <span> in ".$innear." ".$city.', '.$state."</span></small>", 
 			"class" => "homeheader"
 		);
 
