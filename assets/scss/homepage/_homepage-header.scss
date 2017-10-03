@@ -1,21 +1,30 @@
 .homeheader {
-	background-image: url("/assets/img/home-banner.jpg");
+  background-image: url("/assets/img/headers/man-working-in-modern-office.jpg");
 	background-size: cover;
 	background-position: center center;
-	background-color: #444;
+	background-color: #fff;
 	background-repeat: no-repeat;
-	color: #fff;
+	color: #444;
+  min-height: 80vh;
+  display: flex;
+  justify-content: flex-end;
+  .title-wrap {
+    align-self: center;
+  }
 	h1 {
 		text-align: right;
 		padding: 3rem 1rem;
-		background-color: rgba($primary-color, 0.3);
 		transition: 0.3s ease-in-out all;
+    color: #444;
+    @media (min-width: 1350px) {
+      font-size: 7.4rem;
+    }
 		@include bp(sm) {
 			padding-right: 3rem;
 		}
 		span {
 			display: block;
-			color: #fff;
+			color: #444;
 		}
 		small {
 			font-size: 1.5rem;
@@ -24,4 +33,9 @@
 			letter-spacing: 0.07em;
 		}
 	}
+
+  h2 {
+    text-align: right;
+    padding-right: 1em;
+  }
 }

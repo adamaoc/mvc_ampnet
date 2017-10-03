@@ -3,6 +3,7 @@ $transition: all 0.3s ease-in-out;
 .home-blog-list {
 	.blogcardlist {
 		overflow: hidden;
+    list-style: none;
 	}
 	.blogcard-item {
 		margin-bottom: 1em;

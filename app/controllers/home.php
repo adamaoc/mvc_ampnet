@@ -1,6 +1,6 @@
 <?php
 
-class Home extends Controller 
+class Home extends Controller
 {
 
 	public function index($locals = '')
@@ -33,15 +33,15 @@ class Home extends Controller
 			"title" => "Home Page of ampnet media - the Dallas, Texas Freelance Web Development – Web Video – Web Advertising – Social Media / Adam Moore - Dallas, Texas",
 			"description" => $about->aboutText()
 		);
-//"title" => "I am <span>Adam</span> <span>Moore</span> <small>I develop websites <span>and live in Dallas, TX</span></small>", 
+//"title" => "I am <span>Adam</span> <span>Moore</span> <small>I develop websites <span>and live in Dallas, TX</span></small>",
 
 		$pageheader = array(
-			"title" => "This is <span>ampnet (media)</span><small>Web Development – Web Video – Web Advertising – Social Media  <span> in Dallas, Texas</span></small>",
+			"title" => "ampnet (media)<small> Web Video - Web Development <br>Web Advertising – Social Media  <span>based in Dallas, Texas</span></small>",
 			"class" => "homeheader"
 		);
 
 		$worklist = $works->getList(0,2);
-		$bloglist = $blogs->getList(0,6);
+		$bloglist = $blogs->getList(0,3);
 
 		$this->view('home/index', array(
 			'headerdata' => $headerdata,
@@ -85,7 +85,7 @@ class Home extends Controller
 		);
 
 		$pageheader = array(
-			"title" => $city.', '.$state."<span>ampnet</span> <span>media</span> <small>Web Development – Web Video – Web Advertising – Social Media  <span> ".$innear." ".$city.', '.$state."</span></small>", 
+			"title" => $city.', '.$state."<span>ampnet</span> <span>media</span> <small>Web Development – Web Video – Web Advertising – Social Media  <span> ".$innear." ".$city.', '.$state."</span></small>",
 			"class" => "homeheader"
 		);
 
