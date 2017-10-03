@@ -793,6 +793,9 @@ textarea {
 .home-blog-list .tech .card-blog {
   border-top: 8px solid #6DB76E; }
 
+.home-blog-list .video .card-blog {
+  border-top: 8px solid #946db7; }
+
 .home-blog-list .title-wrap {
   position: relative;
   width: 100%;
