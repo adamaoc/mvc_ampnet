@@ -3,7 +3,7 @@
 * 2018-02-01
 * video
 * https://github.com/adamaoc/mvc_ampnet/blob/master/assets/img/blog/just-get-started.jpg?raw=true | https://github.com/adamaoc/mvc_ampnet/blob/master/assets/img/blog/just-get-started.jpg?raw=true | https://github.com/adamaoc/mvc_ampnet/blob/master/assets/img/blog/just-get-started.jpg?raw=true
-* rgba(204,24,30,0.7)
+* rgba(71,137,102,0.7)
 * published
 * gear review, tips
 
