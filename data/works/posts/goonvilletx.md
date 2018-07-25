@@ -1,4 +1,4 @@
-* Goonville TX
+* GoonvilleTX
 * North Forney Football
 * 2018-06-20
 * goonvilletx.com
