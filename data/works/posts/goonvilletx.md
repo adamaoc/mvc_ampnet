@@ -9,6 +9,8 @@
 
 Here is a great website built for the football team at North Forney High School. The team, known as Goons, is helping to change the culture of the town with many in the town referring to it as Goonville, TX. 
 
+<img src="/assets/img/works/goonville/goonvilletx-screenshots.png" alt="goonville tx website responsive screenshot" />
+
 The purpose of this website is to show off the schedule of the football team and help promote things that the football team is doing - like a radio show and other activities. It also has sections for player rosters and coach rosters.
 
 ### Managing the website
