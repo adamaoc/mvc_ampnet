@@ -620,7 +620,7 @@ textarea {
       background-position: right center; }
     .homepage__section__image--ads {
       background-image: url("/assets/img/sections/web-ads.jpg");
-      background-position: right bottom; }
+      background-position: left bottom; }
     .homepage__section__image--social {
       background-image: url("/assets/img/sections/social.png");
       background-position: center bottom; }
@@ -663,8 +663,11 @@ textarea {
   background: #f6f7f9;
   position: relative;
   margin-top: 4em;
-  margin-bottom: 4em;
+  margin-bottom: 8em;
   padding-top: 2em; }
+  @media (min-width: 60rem) {
+    .bgwrap--light {
+      margin-bottom: 4em; } }
   .bgwrap--light:before {
     content: "";
     position: absolute;
@@ -699,21 +702,28 @@ textarea {
     text-align: right;
     padding: 3rem 1rem;
     transition: 0.3s ease-in-out all;
-    color: #444; }
+    color: #444;
+    font-size: 2.8rem; }
     @media (min-width: 1350px) {
       .homeheader h1 {
         font-size: 7.4rem; } }
     @media (min-width: 40rem) {
       .homeheader h1 {
+        font-size: 3.8rem;
         padding-right: 3rem; } }
     .homeheader h1 span {
       display: block;
       color: #444; }
     .homeheader h1 small {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
+      padding-top: 0.5rem;
       display: block;
       line-height: 1.2;
       letter-spacing: 0.07em; }
+      @media (min-width: 40rem) {
+        .homeheader h1 small {
+          font-size: 1.5rem;
+          padding-top: 0; } }
   .homeheader h2 {
     text-align: right;
     padding-right: 1em; }
@@ -844,27 +854,43 @@ textarea {
   background: rgba(85, 114, 120, 0.8); }
 
 .home-work-list {
-  overflow: hidden; }
+  margin-top: 5em; }
   .home-work-list .worklist {
-    list-style: none;
+    margin: 2em 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    @media (min-width: 900px) {
+      .home-work-list .worklist {
+        flex-direction: row; } }
+  .home-work-list .workitem {
+    flex-basis: none;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 1em;
+    background: #f6f7f9;
+    padding: 1em;
+    border-radius: 5px;
+    color: #444;
+    text-decoration: none; }
+    @media (min-width: 900px) {
+      .home-work-list .workitem {
+        flex-basis: 40%; } }
+    .home-work-list .workitem img {
+      max-width: 100%; }
+    .home-work-list .workitem .imgwrap {
+      margin-bottom: 1em;
+      width: 100%;
+      height: 240px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+  .home-work-list .pagination {
     overflow: hidden; }
-  @media (min-width: 40rem) {
-    .home-work-list .workitem {
-      width: 50%;
-      float: left;
-      padding: 0 1em;
-      overflow: hidden;
-      min-height: 35em; } }
-  .home-work-list .details {
-    text-decoration: none;
-    text-align: justify; }
-  .home-work-list .imgwrap {
-    padding: 1em; }
-    .home-work-list .imgwrap img {
-      width: 100%; }
-  .home-work-list .btn {
-    float: right;
-    margin-right: 1em; }
+    .home-work-list .pagination .btn {
+      float: right; }
 
 .homeabout .img-wrap {
   margin-left: -999em;
@@ -948,32 +974,38 @@ section {
     max-width: 100%; }
 
 .work-list-page .worklist {
-  list-style: none; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2em; }
 
 .work-list-page .workitem {
-  overflow: hidden;
+  text-decoration: none;
   padding: 1em;
-  border-bottom: 5px solid #a6bcc0; }
-
-.work-list-page .details {
-  display: block;
-  overflow: hidden;
-  text-decoration: none; }
-  .work-list-page .details .imgwrap {
-    text-align: center; }
-    @media (min-width: 40rem) {
-      .work-list-page .details .imgwrap {
-        width: 30%;
-        float: left; } }
-    .work-list-page .details .imgwrap img {
+  background: #f6f7f9;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1em;
+  grid-template-areas: "title title title" "image meta meta" "image excerpt excerpt"; }
+  .work-list-page .workitem h3 {
+    grid-area: title; }
+  .work-list-page .workitem .meta {
+    grid-area: meta;
+    max-width: 100%;
+    margin: 0; }
+  .work-list-page .workitem .imgwrap {
+    grid-area: image;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+    .work-list-page .workitem .imgwrap img {
       max-width: 100%; }
-  @media (min-width: 40rem) {
-    .work-list-page .details .excerpt {
-      width: 70%;
-      float: left;
-      padding-left: 1em; }
-      .work-list-page .details .excerpt p {
-        margin-top: .5em; } }
+  .work-list-page .workitem .excerpt {
+    grid-area: excerpt; }
+
+.work-list-page .pagination {
+  margin-top: 2em; }
 
 .single-work .blogheader h1 small {
   max-width: 17em;

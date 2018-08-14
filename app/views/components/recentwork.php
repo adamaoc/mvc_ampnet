@@ -1,7 +1,10 @@
 <section class="recent-work">
 	<div class="container">
-		<h3>Recent Work</h3>
+		<h2>Recent Work</h2>
 		<?php getComponent("workslist", $data); ?>
-		<a href="/work/" class="btn">check out all works &raquo;</a>
+    
+    <div class="pagination">
+  		<a href="/work/" class="btn">check out all works &raquo;</a>
+    </div>
 	</div>
 </section>

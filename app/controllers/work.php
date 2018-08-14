@@ -1,6 +1,6 @@
 <?php
 
-class Work extends Controller 
+class Work extends Controller
 {
 
 	public function index($slug = '', $pagenum = '')
@@ -32,10 +32,10 @@ class Work extends Controller
 		);
 
 		$pageheader = array(
-			"title" => $post['title'], 
-			"class" => "page-header", 
-			"subtitle" => "<small>".$post['subtitle']."</small>", 
-			"heroimg" => "background-image: url(/assets/img/".$post['imglg'].");", 
+			"title" => $post['title'],
+			"class" => "page-header",
+			"subtitle" => "<small>".$post['subtitle']."</small>",
+			"heroimg" => "background-image: url(/assets/img/".$post['imglg'].");",
 			"postcolor" => "background-color: ".$post['color'].";"
 		);
 
@@ -47,29 +47,29 @@ class Work extends Controller
 			'title' => $model->pageTitle,
 			'slogan' => $model->pageSlogan,
 			"post" => $post
-		));	
+		));
 	}
 
 	private function getPages($model, $pagenum)
 	{
 		$numPosts = $model->getNumbPosts();
-		$countby = 4;
+		$countby = 8;
 		$nextpage = $pagenum + 1;
 		$prevpage = $pagenum -1;
 		$maxpagecount = ceil($numPosts / $countby);
 		// Do more maths to make this happen :\
 		if($pagenum == 1) {
 			$minpage = 0;
-			$maxpage = 4;
-		}elseif($pagenum == 2) {
-			$minpage = 4;
 			$maxpage = 8;
-		}elseif($pagenum == 3) {
+		}elseif($pagenum == 2) {
 			$minpage = 8;
-			$maxpage = 12;
-		}elseif($pagenum == 4) {
-			$minpage = 12;
 			$maxpage = 16;
+		}elseif($pagenum == 3) {
+			$minpage = 16;
+			$maxpage = 24;
+		}elseif($pagenum == 4) {
+			$minpage = 24;
+			$maxpage = 32;
 		}
 
 		if($maxpage > $numPosts) {
@@ -88,8 +88,8 @@ class Work extends Controller
 		);
 
 		$pageheader = array(
-			"title" => "Portfolio", 
-			"subtitle" => "<small>by ampnet<span>(media)</span></small>", 
+			"title" => "Portfolio",
+			"subtitle" => "<small>by ampnet<span>(media)</span></small>",
 			"class" => "page-header",
 			"heroimg" => "background-image: url(/assets/img/home-banner.jpg);"
 		);
@@ -116,6 +116,6 @@ class Work extends Controller
 
 		$this->view('work/fulllist', array(
 			"post" => $list
-		));	
+		));
 	}
 }

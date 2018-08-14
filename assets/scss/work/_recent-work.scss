@@ -1,35 +1,45 @@
 .work-list-page {
-	.worklist {
-		list-style: none;
-	}
-	.workitem {
-		overflow: hidden;
-		padding: 1em;
-		border-bottom: 5px solid lighten($primary-color, 30%);
-	}
-	.details {
-		display: block;
-		overflow: hidden;
-		text-decoration: none;
-		.imgwrap {
-			text-align: center;
-			@include bp(sm) {
-				width: 30%;
-				float: left;
-			}
-			img {
-				max-width: 100%;
-			}
-		}
-		.excerpt {
-			@include bp(sm) {
-				width: 70%;
-				float: left;
-				padding-left: 1em;
-				p {
-					margin-top: .5em;
-				}
-			}
-		}
-	}
+  .worklist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2em;
+  }
+  .workitem {
+    text-decoration: none;
+    padding: 1em;
+    background: #f6f7f9;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 1em;
+    grid-template-areas:
+      "title title title"
+      "image meta meta"
+      "image excerpt excerpt";
+
+    h3 {
+      grid-area: title;
+    }
+    .meta {
+      grid-area: meta;
+      max-width: 100%;
+      margin: 0;
+    }
+    .imgwrap {
+      grid-area: image;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      img {
+        max-width: 100%;
+      }
+    }
+    .excerpt {
+      grid-area: excerpt;
+    }
+  }
+  .pagination {
+    margin-top: 2em;
+  }
 }

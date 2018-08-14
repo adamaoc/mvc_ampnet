@@ -26,7 +26,7 @@
       }
       &--ads {
         background-image: url("/assets/img/sections/web-ads.jpg");
-        background-position: right bottom;
+        background-position: left bottom;
       }
       &--social {
         background-image: url("/assets/img/sections/social.png");
@@ -88,8 +88,11 @@
   background: #f6f7f9;
   position: relative;
   margin-top: 4em;
-  margin-bottom: 4em;
+  margin-bottom: 8em;
   padding-top: 2em;
+  @include bp(md) {
+    margin-bottom: 4em;
+  }
   &:before {
     content: "";
     position: absolute;
