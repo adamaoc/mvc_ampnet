@@ -3,8 +3,6 @@
 <?php getComponent("pageheader", $data['pageheader']); ?>
 
 <section class="social">
-	<h3 style="text-align: center; margin: 3em 0;">More coming soon...</h3>
-
   <div class="homepage__dark-section">
     <h2>Social Media</h2>
     <p class="type-large" style="text-align: center;">Your competition is getting the best of you. If you're not utilizing social media for your benifit you're missing out!</p>

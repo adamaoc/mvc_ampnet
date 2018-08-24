@@ -12,6 +12,8 @@ textarea {
 }
 
 .btn-submit {
+	display: block;
+	width: 100%;
 	line-height: 2;
 	font-size: 1.1rem;
 	font-family: $header-font;
@@ -23,6 +25,7 @@ textarea {
 	border: none;
 	outline: none;
 	text-transform: uppercase;
+	border-radius: 0;
 }
 
 .stacked-form {
@@ -45,4 +48,24 @@ textarea {
 			width: 100%;
 		}
 	}
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 22px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert > p, .alert > ul {
+    margin-bottom: 0;
+}
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
 }

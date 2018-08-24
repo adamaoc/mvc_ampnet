@@ -5,9 +5,11 @@ class Video extends Controller
 	public function index()
 	{
 		$about = $this->model('AboutModel');
+		$worksmodel = $this->model('WorksModel');
 		$linksdata = $this->model('LinksModel');
 		$sitenav = $linksdata->getSiteLinks();
 		$footerdata = $linksdata->footerLinks();
+		$worksdata = $worksmodel->getList(0,4);
 
 		$headerdata = array(
 			"title" => "Professional Web Video by ampnet media - the Dallas, Texas Freelance Web Developer who is looking to help take your company get online. / Adam Moore developing in Dallas, Texas",
@@ -30,7 +32,8 @@ class Video extends Controller
 			"specialties" => $about->specialtiesList(),
 			"bedata" => $about->beData(),
 			"social-data" => $about->socialData(),
-			"moreaboutText" => $about->aboutText("moreAboutText")
+			"moreaboutText" => $about->aboutText("moreAboutText"),
+			"worklist" => $worksdata
 		));
 	}
 }

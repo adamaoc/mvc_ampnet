@@ -3,9 +3,6 @@
 <?php getComponent("pageheader", $data['pageheader']); ?>
 
 <section class="video">
-	<h3 style="text-align: center; margin: 3em 0;">More coming soon...</h3>
-
-
   <div class="homepage__section">
     <div class="homepage__section__image homepage__section__image--video"></div>
     <div class="homepage__section__details">
@@ -23,6 +20,10 @@
       </div>
     </div>
   </div>
+
+  <div class="home-work-list">
+	  <?php getComponent("recentwork", $data['worklist']); ?>
+</div>
 </section>
 
 <?php getFooter($data['footerdata']); ?>

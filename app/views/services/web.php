@@ -3,8 +3,6 @@
 <?php getComponent("pageheader", $data['pageheader']); ?>
 
 <section class="web">
-	<h3 style="text-align: center; margin: 3em 0;">More coming soon...</h3>
-
   <div class="homepage__section bgwrap--light">
     <div class="homepage__section__details">
       <div class="homepage__section__details-wrap homepage__section__details-wrap--left">

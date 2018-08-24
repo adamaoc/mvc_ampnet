@@ -1,9 +1,13 @@
 .contact {
+	margin-bottom: 0;
 	blockquote {
 		max-width: 40em;
 		@include bp(sm) {
 			margin-left: 5rem;
 		}
+	}
+	.be-section {
+		margin-bottom: 0;
 	}
 }
 .contact-form {

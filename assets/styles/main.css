@@ -399,6 +399,8 @@ textarea {
   height: 4rem; }
 
 .btn-submit {
+  display: block;
+  width: 100%;
   line-height: 2;
   font-size: 1.1rem;
   font-family: "Open Sans", sans-serif;
@@ -409,7 +411,8 @@ textarea {
   height: 2.2rem;
   border: none;
   outline: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-radius: 0; }
 
 .stacked-form:after {
   content: "";
@@ -425,6 +428,25 @@ textarea {
     width: 100%; }
   .stacked-form .form-group textarea {
     width: 100%; }
+
+.alert {
+  padding: 15px;
+  margin-bottom: 22px;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+
+.alert > p, .alert > ul {
+  margin-bottom: 0; }
+
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442; }
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d; }
 
 .nav-toggle {
   position: fixed;
@@ -1060,11 +1082,15 @@ section {
   .main-about .aboutme-dl {
     margin-left: 14em; } }
 
-.contact blockquote {
-  max-width: 40em; }
-  @media (min-width: 40rem) {
-    .contact blockquote {
-      margin-left: 5rem; } }
+.contact {
+  margin-bottom: 0; }
+  .contact blockquote {
+    max-width: 40em; }
+    @media (min-width: 40rem) {
+      .contact blockquote {
+        margin-left: 5rem; } }
+  .contact .be-section {
+    margin-bottom: 0; }
 
 @media (min-width: 40rem) {
   .contact-form {
