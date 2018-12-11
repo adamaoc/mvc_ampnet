@@ -1,5 +1,10 @@
-<?php $post = $data['post']; ?>
-
+<?php 
+	$post = $data['post']; 
+	$link = '<a href="' . $post['category'][0] .'">' . $post['category'][0] . '</a>';
+	if (count($post['category']) > 1) {
+		$link = '<a href="' . $post['category'][0] .'">' . $post['category'][1] . '</a>';
+	}
+?>
 <?php getHeader(array("nav" => $data['sitenav'], "headerdata" => $data['headerdata'])); ?>
 <?php 
 // Header
@@ -9,7 +14,7 @@
 <article class="container">
 	<div class="meta">
 		Published on <?= $post['pubdate'] ?> | 
-		visit <a href="http://<?= $post['category'] ?>" target="_blank"><?= $post['category'] ?></a>
+		visit <?php echo $link; ?>
 	</div>
 	<div class="post">
 		<?= $post['content'] ?>

@@ -5,6 +5,7 @@ class WorksModel
 	public $pageTitle = "Works";
 	public $pageSlogan = "DFW Web Development and Design";
 	public $pageContent = "Here is some standard text for the portfolio page.";
+	public $tagList = array();
 
 	public $worksdir = "./data/works/posts/";
 
@@ -74,6 +75,27 @@ class WorksModel
 
 	}
 
+	private function buildTagsFile($tags, $slug)
+	{
+		// echo $slug;
+		// print_r($tags);
+		foreach($tags as $tag) {
+			if(!in_array($tag, key($this->tagList))) {
+				$this->tagList[trim($tag)] = $slug;
+			} else {
+				$this->tagList[trim($tag)] =+ ", " . $slug;
+			}
+		}
+		// $this->tagList[$tags] += $slug;
+
+		// if (count($this->tagList) > 25) {
+		// 	echo "<pre>";
+		// 	print_r($this->tagList);
+		// 	echo "</pre>";
+		// 	die;
+		// }
+	}
+
 	private function buildPost($post) 
 	{
 
@@ -87,7 +109,8 @@ class WorksModel
     	$blog_slug = str_replace($remove, '', $blog_slug);
     	$blog_subtitle = str_replace(array("\n", '* '), '', $post[1]);
     	$blog_pubdate = str_replace(array("\n", '* '), '', $post[2]);
-    	$blog_cat = str_replace(array("\n", '* '), '', $post[3]);
+			$blog_cat = str_replace(array("\n", '* '), '', $post[3]);
+			$blog_cat = explode('|', $blog_cat);
     	
     	$blog_img = str_replace(array("\n", '* '), '', $post[4]);
 
@@ -107,8 +130,11 @@ class WorksModel
     	$blog_status = str_replace(array("\n", '*'), '', $post[6]);
 
     	// $post[7] - tag array
-    	$blog_tags = str_replace(array("\n", '*'), '', $post[7]);
+		$blog_tags = str_replace(array("\n", '*'), '', $post[7]);
+
     	$tags_arr = explode(',', $blog_tags);
+		// building tags
+		$this->buildTagsFile($tags_arr, $blog_slug);
 
     	// $post[8] - blank space where blog starts
 
