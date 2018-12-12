@@ -2,7 +2,7 @@
 * Building React Components
 * 2014-12-23
 * codepen.io
-* works/react/reactjs-logo-thumb.png | works/react/reactjs-logo-thumb.png | works/react/reactjs-logo.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/react/reactjs-logo-thumb.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/react/reactjs-logo-thumb.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/react/reactjs-logo.png
 * 239, 141, 34, 0.8
 * codepen
 * reactjs, react, photo gallery, JavaScript

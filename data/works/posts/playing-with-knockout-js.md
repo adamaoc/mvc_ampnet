@@ -2,7 +2,7 @@
 * light weight data binding
 * 2015-04-08
 * codepen.io
-* works/codepen-knockout/knockout-shot.png | works/codepen-knockout/knockout-shot.png | works/codepen-knockout/knockout-shot.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/codepen-knockout/knockout-shot.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/codepen-knockout/knockout-shot.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/codepen-knockout/knockout-shot.png
 * 252, 110, 81, 0.8
 * codepen
 * codepen, knockout, jquery, javascript

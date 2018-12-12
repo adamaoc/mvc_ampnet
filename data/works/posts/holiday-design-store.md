@@ -2,7 +2,7 @@
 * An online store that sells seasonal and holiday decorations.
 * 2013-04-01
 * holiday-design.com
-* HD-chromebook.png | HD-chromebook.png | HD-chromebook.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/HD-chromebook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/HD-chromebook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/HD-chromebook.png
 * 107, 98, 20, 0.5
 * holidaydesign
 * tag1, tag2, tag3, tag4

@@ -2,7 +2,7 @@
 * Event Marketing, Experiential Marketing, Direct Marketing, Digital Marketing, Partner Marketing, Retail Promotions
 * 2014-09-01
 * xenonmarketing.com
-* xenon-marketing-screenshot.png | xenon-marketing-screenshot.png | timthumb.jpg
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/xenon-marketing-screenshot.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/xenon-marketing-screenshot.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/timthumb.jpg
 * 239, 141, 34, 0.8
 * xenonmarketing
 * tag1, tag2, tag3, tag4

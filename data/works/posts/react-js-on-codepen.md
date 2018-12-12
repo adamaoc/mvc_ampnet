@@ -2,7 +2,7 @@
 * Helpers and Learning
 * 2016-01-20
 * codepen.io
-* works/react/reactjs-logo-thumb.png | works/react/reactjs-logo.png | works/react/reactjs-logo.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/react/reactjs-logo-thumb.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/react/reactjs-logo.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/react/reactjs-logo.png
 * 252, 110, 81, 0.8
 * codepen
 * codepen, react, js, javascript, jsx

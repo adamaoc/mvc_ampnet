@@ -1,5 +1,5 @@
 .homeheader {
-  background-image: url("/assets/img/headers/man-working-in-modern-office.jpg");
+  background-image: url("https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/headers/adam-canon-videography.JPG");
 	background-size: cover;
 	background-position: center center;
 	background-color: #fff;
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: flex-end;
   .title-wrap {
-    align-self: center;
+		align-self: baseline;
   }
 	h1 {
 		text-align: right;

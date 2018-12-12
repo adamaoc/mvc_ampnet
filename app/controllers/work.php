@@ -35,7 +35,7 @@ class Work extends Controller
 			"title" => $post['title'],
 			"class" => "page-header",
 			"subtitle" => "<small>".$post['subtitle']."</small>",
-			"heroimg" => "background-image: url(/assets/img/".$post['imglg'].");",
+			"heroimg" => "background-image: url(".$post['imglg'].");",
 			"postcolor" => "background-color: ".$post['color'].";"
 		);
 

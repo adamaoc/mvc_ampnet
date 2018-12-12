@@ -5,7 +5,7 @@
 		<small class="meta">
 			<?= $post['category'] ?> | <?= $post['pubdate'] ?>
 		</small>
-		<div class="imgwrap" style="background-image: url(/assets/img/<?= $post['imgthumb'] ?>)"></div>
+		<div class="imgwrap" style="background-image: url(<?= $post['imgthumb'] ?>)"></div>
 		<article class="excerpt">
 			<?= $post['excerpt'] ?>
 		</article>

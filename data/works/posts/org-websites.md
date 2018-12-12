@@ -2,7 +2,7 @@
 * Building websites at an affordable price because we care.
 * 2014-06-01
 * org-websites.com
-* org-websites-ChromeBook.png | org-websites-ChromeBook.png | org-websites-ChromeBook.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/org-websites-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/org-websites-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/org-websites-ChromeBook.png
 * 0, 124, 0, 0.3
 * orgwebsites
 * tag1, tag2, tag3, tag4

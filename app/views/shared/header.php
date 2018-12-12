@@ -15,7 +15,7 @@
         <meta name="google-site-verification" content="fSdVe-xL70WGQ4EdrP7dZemxzq1oYbc_GI48aFY1_0w" />
         <meta name="msvalidate.01" content="B038142E19DDC9427F7BB86F8022EE9C" />
 
-        <link rel="stylesheet" href="/assets/styles/main.css">
+        <link rel="stylesheet" href="/dist/main.css">
 
         <link rel="apple-touch-icon" href="/assets/img/touch-icon-iphone.png" />
         <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/touch-icon-ipad.png" />

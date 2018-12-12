@@ -2,7 +2,7 @@
 * We build websites for political groups and candidates.
 * 2014-05-01
 * liberty-websites.com
-* liberty-websites-ChromeBook.png | liberty-websites-ChromeBook.png | liberty-websites-ChromeBook.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/liberty-websites-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/liberty-websites-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/liberty-websites-ChromeBook.png
 * 107, 20, 29, 0.4
 * libertywebsites
 * tag1, tag2, tag3, tag4

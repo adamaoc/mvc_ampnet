@@ -81,12 +81,4 @@
 	<?php getComponent("recentwork", $data['worklist']); ?>
 </div>
 
-<section class="home-blog-list">
-	<div class="container">
-		<h3>Recent Blog Posts</h3>
-		<?php getComponent("blogcardlist", $data['bloglist']); ?>
-		<a href="/blog/" class="btn">View all blog posts &raquo;</a>
-	</div>
-</section>
-
 <?php getFooter($data['footerdata']); ?>

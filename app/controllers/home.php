@@ -6,7 +6,6 @@ class Home extends Controller
 	public function index($locals = '')
 	{
 		$works = $this->model('WorksModel');
-		$blogs = $this->model('BlogModel');
 		$about = $this->model('AboutModel');
 		$linksdata = $this->model('LinksModel');
 		$sitenav = $linksdata->getSiteLinks();
@@ -14,7 +13,6 @@ class Home extends Controller
 
 		$model = array(
 			"works" => $works,
-			"blogs" => $blogs,
 			"about" => $about,
 			"linksdata" => $linksdata,
 			"sitenav" => $sitenav,
@@ -33,15 +31,13 @@ class Home extends Controller
 			"title" => "Home Page of ampnet media - the Dallas, Texas Freelance Web Development – Web Video – Web Advertising – Social Media / Adam Moore - Dallas, Texas",
 			"description" => $about->aboutText()
 		);
-//"title" => "I am <span>Adam</span> <span>Moore</span> <small>I develop websites <span>and live in Dallas, TX</span></small>",
 
 		$pageheader = array(
 			"title" => "ampnet (media)<small> Web Video - Web Development <br>Web Advertising – Social Media  <span>based in Dallas, Texas</span></small>",
 			"class" => "homeheader"
 		);
 
-		$worklist = $works->getList(0,4);
-		$bloglist = $blogs->getList(0,3);
+		$worklist = $works->getList(0,8);
 
 		$this->view('home/index', array(
 			'headerdata' => $headerdata,
@@ -49,7 +45,6 @@ class Home extends Controller
 			'pageheader' => $pageheader,
 			'footerdata' => $footerdata,
 			"worklist" => $worklist,
-			"bloglist" => $bloglist,
 			"about-text" => $about->aboutText(),
 			"bedata" => $about->beData()
 		));
@@ -90,7 +85,6 @@ class Home extends Controller
 		);
 
 		$worklist = $model['works']->getList(0,4);
-		$bloglist = $model['blogs']->getList(0,6);
 
 		$this->view('locals/index', array(
 			'headerdata' => $headerdata,
@@ -98,7 +92,6 @@ class Home extends Controller
 			'pageheader' => $pageheader,
 			'footerdata' => $model['footerdata'],
 			"worklist" => $worklist,
-			"bloglist" => $bloglist,
 			"about-text" => $model['about']->aboutText(),
 			"bedata" => $model['about']->beData()
 		));

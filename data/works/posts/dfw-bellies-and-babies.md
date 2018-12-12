@@ -2,7 +2,7 @@
 * Photographing your child from belly to baby.
 * 2014-05-01
 * dfwbelliesandbabies.com
-* dfwBnB-ChromeBook.png | dfwBnB-ChromeBook.png | dfwBnB-ChromeBook.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/dfwBnB-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/dfwBnB-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/dfwBnB-ChromeBook.png
 * 157, 32, 171, 0.4
 * dfwbelliesnbabies
 * tag1, tag2, tag3, tag4

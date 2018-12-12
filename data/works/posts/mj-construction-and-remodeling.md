@@ -2,7 +2,7 @@
 * Dallas, Texas Construction and Remodeling Company.
 * 2014-07-01
 * mandjdfw.com
-* MandJ-2-rwd-stack.png | MandJ-2-rwd-stack.png | MandJ-2-rwd-stack.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/MandJ-2-rwd-stack.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/MandJ-2-rwd-stack.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/MandJ-2-rwd-stack.png
 * 171, 88, 32, 0.5
 * mandjdfw
 * tag1, tag2, tag3, tag4

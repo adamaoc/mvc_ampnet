@@ -2,7 +2,7 @@
 * Cosmetics & Boutique of Forney - Promo Video
 * 2018-11-30
 * https://www.facebook.com/MerleNormanCosmeticsOfForney/ | Facebook
-* works/MNCBF/MNCBF-cover.png | works/MNCBF/MNCBF-cover.png | works/MNCBF/MNCBF-cover.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/MNCBF/MNCBF-cover.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/MNCBF/MNCBF-cover.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/MNCBF/MNCBF-cover.png
 * 20, 85, 120, 0.7
 * video
 * promo, merle norman, forney, video

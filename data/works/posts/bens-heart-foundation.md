@@ -2,7 +2,7 @@
 * Helping families with children born with heart defects.
 * 2014-04-01
 * bensheart.org
-* bensheart-ChromeBook.png | bensheart-ChromeBook.png | bensheart-ChromeBook.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/bensheart-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/bensheart-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/bensheart-ChromeBook.png
 * 124, 0, 0, 0.4
 * bensheart
 * tag1, tag2, tag3, tag4

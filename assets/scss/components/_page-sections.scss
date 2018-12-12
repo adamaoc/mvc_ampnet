@@ -17,19 +17,19 @@
       background-size: contain;
       min-height: 350px;
       &--video {
-        background-image: url("/assets/img/sections/video-section.jpg");
+        background-image: url("https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/sections/video-section.jpg");
         background-position: left center;
       }
       &--web {
-        background-image: url("/assets/img/sections/web-section.jpg");
+        background-image: url("https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/sections/web-section.jpg");
         background-position: right center;
       }
       &--ads {
-        background-image: url("/assets/img/sections/web-ads.jpg");
+        background-image: url("https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/sections/web-ads.jpg");
         background-position: left bottom;
       }
       &--social {
-        background-image: url("/assets/img/sections/social.png");
+        background-image: url("https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/sections/social.jpg");
         background-position: center bottom;
       }
     }

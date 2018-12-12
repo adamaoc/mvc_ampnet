@@ -2,7 +2,7 @@
 * Wordpress, Timber, Twig, and more!
 * 2015-08-15
 * txgarage.com
-* works/txg-update/txGarage-v6-design-responsive.png | works/txg-update/Optimized-hero-insta-bg.png | works/txg-update/Optimized-hero-insta-bg.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/txg-update/txGarage-v6-design-responsive.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/txg-update/Optimized-hero-insta-bg.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/txg-update/Optimized-hero-insta-bg.png
 * 0, 100, 200, 0.3
 * txgarage
 * wordpress, timber, twig, js, javascript
@@ -20,20 +20,20 @@ __screenshots__
 
 ####Responsive Home Page
 
-<img src="/assets/img/works/txg-update/txGarage-v6-design-responsive.png" class="inner-blog-photo" alt="Fully responsive website from mobile phone to full desktop and everything in between" />
+<img src="https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/txg-update/txGarage-v6-design-responsive.png" class="inner-blog-photo" alt="Fully responsive website from mobile phone to full desktop and everything in between" />
 
 ####Responsive Posts Page
 
-<img src="/assets/img/works/txg-update/txgarage-posts-page.png" class="inner-blog-photo" alt="Fully responsive website from mobile phone to full desktop and everything in between" />
+<img src="https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/txg-update/txgarage-posts-page.png" class="inner-blog-photo" alt="Fully responsive website from mobile phone to full desktop and everything in between" />
 
 ####Responsive Article (Post) Page
 
-<img src="/assets/img/works/txg-update/txgarage-v6-post-page.png" class="inner-blog-photo" alt="Fully responsive website from mobile phone to full desktop and everything in between" />
+<img src="https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/txg-update/txgarage-v6-post-page.png" class="inner-blog-photo" alt="Fully responsive website from mobile phone to full desktop and everything in between" />
 
 ####Responsive Article - tl;dr feature
 
-<img src="/assets/img/works/txg-update/txgarage-v6-tldr-feature.png" class="inner-blog-photo" alt="Fully responsive website from mobile phone to full desktop and everything in between" />
+<img src="https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/txg-update/txgarage-v6-tldr-feature.png" class="inner-blog-photo" alt="Fully responsive website from mobile phone to full desktop and everything in between" />
 
 ####Responsive Article - Author Byline
 
-<img src="/assets/img/works/txg-update/txgarage-v6-author-byline.png" class="inner-blog-photo" alt="Fully responsive website from mobile phone to full desktop and everything in between" />
+<img src="https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/works/txg-update/txgarage-v6-author-byline.png" class="inner-blog-photo" alt="Fully responsive website from mobile phone to full desktop and everything in between" />

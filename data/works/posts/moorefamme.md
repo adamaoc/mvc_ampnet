@@ -2,7 +2,7 @@
 * The Moore Family Blog
 * 2014-05-01
 * moorefam.me
-* moorefam-ChromeBook.png | moorefam-ChromeBook.png | moorefam-ChromeBook.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/moorefam-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/moorefam-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/moorefam-ChromeBook.png
 * default
 * moorefam
 * tag1, tag2, tag3, tag4

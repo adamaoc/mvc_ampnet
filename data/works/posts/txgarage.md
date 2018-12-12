@@ -2,7 +2,7 @@
 * News. Reviews. Passion. for Texas automotive consumers.
 * 2012-08-01
 * txgarage.com
-* txGarage-ChromeBook.png | txGarage-ChromeBook.png | txGarage-ChromeBook.png
+* https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/txGarage-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/txGarage-ChromeBook.png | https://ampnet.sfo2.cdn.digitaloceanspaces.com/www-assets/img/txGarage-ChromeBook.png
 * 0, 100, 200, 0.3
 * txgarage
 * tag1, tag2, tag3, tag4
