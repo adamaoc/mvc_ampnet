@@ -2,6 +2,26 @@
 
 <?php getComponent("pageheader", $data['pageheader']); ?>
 
+<style>
+.the_why {
+  text-align: center;
+  max-width: 600px;
+  margin: 2em auto 1em;
+  font-weight: 100;
+  color: #a09c9c;
+}
+.the_why strong {
+  color: #333;
+}
+</style>
+<div class="homepage__section">
+  <h3 class="the_why">We are a <em><strong>Branding and Marketing</strong></em> company with the goal of helping your company standout online.</h3>
+</div>
+
+<div class="homepage__section">
+  <?php getComponent("testimonial", $data['testimonial']); ?>
+</div>
+
 <div class="homepage__section">
   <div class="homepage__section__image homepage__section__image--video"></div>
   <div class="homepage__section__details">

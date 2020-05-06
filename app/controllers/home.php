@@ -36,8 +36,23 @@ class Home extends Controller
 			"title" => "ampnet (media)<small> Web Video - Web Development <br>Web Advertising – Social Media  <span>based in Dallas, Texas</span></small>",
 			"class" => "homeheader"
 		);
+		
+		$testimonials = array(
+			array(
+				"author" => "Steve Smirnis", 
+				"quote" => "Adam is always a consummate professional, does a great job and treats people well. He is honest, hardworking and always has a good attitude.", 
+				"img" => "https://pictures.alignable.com/eyJidWNrZXQiOiJhbGlnbmFibGV3ZWItcHJvZHVjdGlvbiIsImtleSI6ImJ1c2luZXNzZXMvbG9nb3Mvb3JpZ2luYWwvNTE3NTA0NS8xNTU4Mzc2OTEzXzEyMjI3MDYzXzkzNTM3MDcyNjUyODYyMV8yOTYxMTcxMDQxMzY0NzQ1ODYyX24uanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxODIsImhlaWdodCI6MTgyfX19", 
+				"cite" => "from <a href='https://www.alignable.com/forney-tx/ampnet-media' target='_blank'>alignable</a>"
+			),
+			array(
+				"author" => "Nathan Pennington", 
+				"quote" => "Adam has such a great personality and a sincere interest in the work he does, that we quickly became friends. I watched his skills improve every single day we worked together. He's an extremely quick learner and spends any down time studying.", 
+				"img" => "https://media-exp1.licdn.com/dms/image/C4D03AQEdC1R8-MRvow/profile-displayphoto-shrink_100_100/0?e=1594252800&v=beta&t=y5RP31WDZQrwdptE_YZHZARAKHihQLLBAkfzxPxuyno", 
+				"cite" => "from <a href='https://www.linkedin.com/in/adammoore214/' target='_blank'>linkedin</a>"
+			)
+		);
 
-		$worklist = $works->getList(0,8);
+		$worklist = $works->getList(0,2);
 
 		$this->view('home/index', array(
 			'headerdata' => $headerdata,
@@ -46,7 +61,8 @@ class Home extends Controller
 			'footerdata' => $footerdata,
 			"worklist" => $worklist,
 			"about-text" => $about->aboutText(),
-			"bedata" => $about->beData()
+			"bedata" => $about->beData(),
+			'testimonial' => $testimonials
 		));
 	}
 
